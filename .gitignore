@@ -1,0 +1,28 @@
+# Downloaded third-party snapshots and local Unreal working copies.
+# Do not accidentally publish bundled Marketplace source assets.
+upstream/
+projects/
+artifacts/
+# Pinned metadata is required by the upstream download and verification tools.
+!artifacts/
+artifacts/*
+!artifacts/upstream-tree.json
+!artifacts/upstream-commit.json
+!artifacts/snapshot-verification.json
+__pycache__/
+.DS_Store
+
+# Release archives and expanded installers are uploaded as release assets.
+outputs/**/*.zip
+outputs/**/mods/
+
+# Generated galleries can be rebuilt; original art and prompts stay in Git.
+frostmoon/mod/art/card-gallery-*/
+frostmoon/mod/backups/
+
+# Local credentials and environment files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key

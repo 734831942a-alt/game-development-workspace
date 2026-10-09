@@ -1,0 +1,101 @@
+{
+  "sha": "dde95ebb68d2b355428acfbca0137ccc7080dd58",
+  "node_id": "C_kwDOIouCR9oAKGRkZTk1ZWJiNjhkMmIzNTU0MjhhY2ZiY2EwMTM3Y2NjNzA4MGRkNTg",
+  "commit": {
+    "author": {
+      "name": "George Huan",
+      "email": "49583943+georgehuan1994@users.noreply.github.com",
+      "date": "2023-03-14T02:33:00Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-03-14T02:33:00Z"
+    },
+    "message": "Update README.md",
+    "tree": {
+      "sha": "c1bd0451d4574c3b61d8640829d55fea1fbc1143",
+      "url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/git/trees/c1bd0451d4574c3b61d8640829d55fea1fbc1143"
+    },
+    "url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/git/commits/dde95ebb68d2b355428acfbca0137ccc7080dd58",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkD9zdCRBK7hj4Ov3rIwAABwkIAHP8V9pGgD5NwtL8ypdnsIRj\niXKxL4R3s19iN6fwh8Wly5rT4GHDn5pCceSBEjfnPWVVUv3qhQ/t4C4xoK86uX1s\nxyNWpJQ1Qgbtw4EZcwEgqDbOfcbt2xUEbap7fEb5SyndjF+WAOKVoeSUeSNUvcrn\nn+fTUv+C9bt9VCnTLxblVVJ9oUqlAfZ1Q3WcH+b1VUiDp98z4mhqZSjcQAieKwoH\nJV9wtQYVmrBOAKJ2B10RhXWKGF/F2m0CNDSmr8FFh/Qgt82UcRtfL71PDzGF5BPs\n5TdUgmCFBbnkJDZRXI1/ls82uTkFY7Ax02txjoUuII+6T+SisYex2W5HoLHH8Y4=\n=/kHG\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree c1bd0451d4574c3b61d8640829d55fea1fbc1143\nparent eb46d054b3f51c130e0899599ff5fc03fe5df9ec\nauthor George Huan <49583943+georgehuan1994@users.noreply.github.com> 1678761180 +0800\ncommitter GitHub <noreply@github.com> 1678761180 +0800\n\nUpdate README.md",
+      "verified_at": "2024-01-16T19:59:59Z"
+    }
+  },
+  "url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/commits/dde95ebb68d2b355428acfbca0137ccc7080dd58",
+  "html_url": "https://github.com/georgehuan1994/Unreal-Melee-Combat-System/commit/dde95ebb68d2b355428acfbca0137ccc7080dd58",
+  "comments_url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/commits/dde95ebb68d2b355428acfbca0137ccc7080dd58/comments",
+  "author": {
+    "login": "georgehuan1994",
+    "id": 49583943,
+    "node_id": "MDQ6VXNlcjQ5NTgzOTQz",
+    "avatar_url": "https://avatars.githubusercontent.com/u/49583943?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/georgehuan1994",
+    "html_url": "https://github.com/georgehuan1994",
+    "followers_url": "https://api.github.com/users/georgehuan1994/followers",
+    "following_url": "https://api.github.com/users/georgehuan1994/following{/other_user}",
+    "gists_url": "https://api.github.com/users/georgehuan1994/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/georgehuan1994/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/georgehuan1994/subscriptions",
+    "organizations_url": "https://api.github.com/users/georgehuan1994/orgs",
+    "repos_url": "https://api.github.com/users/georgehuan1994/repos",
+    "events_url": "https://api.github.com/users/georgehuan1994/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/georgehuan1994/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "eb46d054b3f51c130e0899599ff5fc03fe5df9ec",
+      "url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/commits/eb46d054b3f51c130e0899599ff5fc03fe5df9ec",
+      "html_url": "https://github.com/georgehuan1994/Unreal-Melee-Combat-System/commit/eb46d054b3f51c130e0899599ff5fc03fe5df9ec"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 2,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "0074b5bf23d43a4f9fe0842251f2f261e1c57722",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/georgehuan1994/Unreal-Melee-Combat-System/blob/dde95ebb68d2b355428acfbca0137ccc7080dd58/README.md",
+      "raw_url": "https://github.com/georgehuan1994/Unreal-Melee-Combat-System/raw/dde95ebb68d2b355428acfbca0137ccc7080dd58/README.md",
+      "contents_url": "https://api.github.com/repos/georgehuan1994/Unreal-Melee-Combat-System/contents/README.md?ref=dde95ebb68d2b355428acfbca0137ccc7080dd58",
+      "patch": "@@ -553,6 +553,8 @@ Character protective gear base blueprint class, inherited from `BP_BaseEquippabl\n \n ![BehaviourTreeNodes](https://gorh.cn/unreal-melee-combat-system/screenshots/BehaviourTreeNodes.png)\n \n+![BT_BossEnemy_KnightSouls](https://gorh.cn/unreal-melee-combat-system/screenshots/BT_BossEnemy_KnightSouls.webp)\n+\n ### BTService_UpdateBehavior\n \n #### Public Variables"
+    }
+  ]
+}

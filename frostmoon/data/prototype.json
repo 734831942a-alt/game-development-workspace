@@ -1,0 +1,42 @@
+{
+  "version": "0.1",
+  "status": "设计提案，未实装或游玩；所有数字待测试",
+  "parameters": [
+    {"id":"frost_threshold","name":"霜蚀阈值","seed":6,"unit":"层","candidates":"5 / 6 / 7","reason":"2霜/次时需要3次；奇数阈值可测试溢出损耗和控霜空间。"},
+    {"id":"transcendence_duration","name":"超然持续","seed":2,"unit":"自身回合结束次数","candidates":"1 / 2","reason":"含触发当回合；第2次自身回合结束时退出。"},
+    {"id":"transcendence_entry_draw","name":"进入超然抽牌","seed":1,"unit":"张","candidates":"0 / 1","reason":"缓解临近耗尽手牌时触发的落空感；没有全局伤害倍率。"},
+    {"id":"moon_threshold","name":"月痕阈值","seed":8,"unit":"层/敌人","candidates":"6 / 8 / 10","reason":"逐个敌人积累，过阈清空全部，不保留溢出。"},
+    {"id":"eclipse_damage","name":"月蚀每击基础伤害","seed":4,"unit":"伤害/击","candidates":"3 / 4 / 5","reason":"只调整每击数值时保持段数固定。"},
+    {"id":"eclipse_hits","name":"月蚀击数","seed":4,"unit":"击/次","candidates":"3 / 4 / 5","reason":"另做总伤害相同的2×8与4×4对照，隔离击数价值。"},
+    {"id":"hp_per_payment","name":"一次基础自损","seed":2,"unit":"HP","candidates":"1 / 2 / 3","reason":"与下一行联合看基础兑换；不自动把其他HP损失换成霜蚀。"},
+    {"id":"frost_per_payment","name":"一次基础产霜","seed":2,"unit":"层","candidates":"固定2，再单独测试3","reason":"种子为2HP换2霜；凝霜与寒月可提高效率，须计入日志。"},
+    {"id":"detonate_margin","name":"提前引爆距阈值差","seed":2,"unit":"层","candidates":"1 / 2","reason":"月落引爆线=月痕阈值-此差值；种子为6。"},
+    {"id":"test_max_hp","name":"测试最大生命","seed":70,"unit":"HP","candidates":"固定70","reason":"仅为控制变量的测试角色规格。"},
+    {"id":"test_energy","name":"测试每回合能量","seed":3,"unit":"能量","candidates":"固定3","reason":"首轮不放能量返还牌，优先观察两种资源。"},
+    {"id":"test_draw","name":"测试每回合抽牌","seed":5,"unit":"张","candidates":"固定5","reason":"手牌上限10，正常弃牌重洗；测试牌表另列。"}
+  ],
+  "cards": [
+    {"id":"F01","name":"寒月斩","group":"Frost","cost":1,"type":"Attack","rarity":"Common","target":"单个敌人","base":"普通：失去2 HP，获得2霜蚀，造成9伤害。超然：造成9伤害2次。","upgrade":"两种形态每击伤害9→12。","roles":["Generator","Consumer","Payoff"],"archetypes":["冰爆","混合","控霜"],"test":"同一张牌不因自身刚触发超然而改走第二个分支；处于超然时不再自损。","values":{"hp_loss":2,"frost":2,"damage":9,"up_damage":12,"normal_hits":1,"trans_hits":2}},
+    {"id":"F02","name":"凝霜","group":"Frost","cost":0,"type":"Skill","rarity":"Uncommon","target":"自身","base":"本回合下一次成功获得正数霜蚀时，获得量翻倍。不叠加。","upgrade":"增加保留。","roles":["Enabler"],"archetypes":["冰爆","混合","控霜"],"test":"普通5霜时翻倍会大量溢出；超然期间失败的产霜不消耗此效果，但回合结束照常失效。","values":{"multiplier":2,"up_retain":true}},
+    {"id":"F03","name":"止水","group":"Frost","cost":1,"type":"Skill","rarity":"Common","target":"自身","base":"选择移除0至2霜蚀。获得6格挡，并为每层实际移除的霜蚀额外获得3格挡。","upgrade":"基础格挡6→9。","roles":["Consumer","Enabler","Utility"],"archetypes":["控霜","冰爆","混合"],"test":"必须允许选择移除1层，否则2层产霜的卡池很难主动维持5层；0霜也有6格挡。","values":{"max_remove":2,"block":6,"up_block":9,"block_per_frost":3}},
+    {"id":"F04","name":"冻彻","group":"Frost","cost":1,"type":"Skill","rarity":"Uncommon","target":"自身","base":"获得4格挡，额外获得等于当前霜蚀层数2倍的格挡。不消耗霜蚀。","upgrade":"基础格挡4→7。","roles":["Payoff"],"archetypes":["控霜","冰爆","混合"],"test":"5层时为14格挡；进入超然后仅4格挡，形成留霜与变身的取舍。","values":{"block":4,"up_block":7,"block_per_frost":2}},
+    {"id":"F05","name":"冰河断","group":"Frost","cost":2,"type":"Attack","rarity":"Uncommon","target":"单个敌人","base":"普通：造成18伤害。超然：造成16伤害2次。","upgrade":"普通18→22；超然每击16→20。","roles":["Consumer","Payoff"],"archetypes":["冰爆","混合"],"test":"重点测超然手牌错位和2费竞争；不是无条件等待变身的废牌。","values":{"normal_damage":18,"up_normal_damage":22,"trans_damage":16,"up_trans_damage":20,"trans_hits":2}},
+    {"id":"M01","name":"新月","group":"Moon","cost":0,"type":"Skill","rarity":"Common","target":"单个敌人","base":"施加2月痕。消耗。","upgrade":"月痕2→3。","roles":["Generator"],"archetypes":["月蚀","混合"],"test":"一次性微调引爆时间；升级带来奇数层数，是否反而造成溢出。","values":{"moonmark":2,"up_moonmark":3,"exhaust":true}},
+    {"id":"M02","name":"弦月","group":"Moon","cost":1,"type":"Attack","rarity":"Common","target":"单个敌人","base":"造成7伤害，再施加2月痕。","upgrade":"伤害7→10。","roles":["Generator","Utility"],"archetypes":["月蚀","混合","冰爆"],"test":"攻击杀死目标时不再施加月痕；作为普通攻击也应可用。","values":{"damage":7,"up_damage":10,"moonmark":2}},
+    {"id":"M03","name":"满月","group":"Moon","cost":2,"type":"Skill","rarity":"Uncommon","target":"单个敌人","base":"施加4月痕，抽1张牌。","upgrade":"抽牌1→2。","roles":["Generator","Utility"],"archetypes":["月蚀","混合"],"test":"2费集中投入是否输给两张弦月；对照洗牌周转和出牌机会成本。","values":{"moonmark":4,"draw":1,"up_draw":2}},
+    {"id":"M04","name":"月落","group":"Moon","cost":1,"type":"Skill","rarity":"Uncommon","target":"单个敌人","base":"若目标至少有6月痕，清空其月痕并触发1次月蚀；否则施加2月痕。","upgrade":"费用1→0。","roles":["Consumer","Enabler","Payoff"],"archetypes":["月蚀","混合"],"test":"引爆线随月痕阈值变化，始终低2层；条件不满足仍有铺垫作用。","values":{"margin":2,"fallback_moonmark":2,"up_cost":0}},
+    {"id":"M05","name":"潮汐","group":"Moon","cost":1,"type":"Power","rarity":"Uncommon","target":"自身","base":"本场战斗，月蚀每结算一击，获得1格挡。","upgrade":"每击格挡1→2。","roles":["Payoff","Build-around"],"archetypes":["月蚀","混合"],"test":"完全被格挡的一击也算；击杀后取消的后续段不算；每份能力线性叠加。","values":{"block_per_hit":1,"up_block_per_hit":2}},
+    {"id":"B01","name":"镜月","group":"Bridge","cost":1,"type":"Skill","rarity":"Common","target":"单个敌人","base":"普通：失去2 HP，获得2霜蚀，施加2月痕，获得4格挡。超然：施加3月痕，获得4格挡。","upgrade":"两种形态格挡4→7。","roles":["Generator","Bridge","Utility"],"archetypes":["冰爆","月蚀","混合","控霜"],"test":"纯月构筑是否愿意承担自损；基础桥梁无需先获得能力牌。","values":{"hp_loss":2,"frost":2,"normal_moonmark":2,"trans_moonmark":3,"block":4,"up_block":7}},
+    {"id":"B02","name":"月下霜","group":"Bridge","cost":1,"type":"Power","rarity":"Uncommon","target":"自身","base":"本场战斗，若一张攻击牌打出时已处于超然，该牌全部效果结束后，向仍存活的主目标施加1月痕。每张攻击牌结算一次。","upgrade":"月痕1→2。","roles":["Generator","Enabler","Bridge","Build-around"],"archetypes":["冰爆","月蚀","混合"],"test":"按牌而非按击；月蚀不会触发本能力。多份能力合计后每张施加一次。","values":{"moonmark_per_card":1,"up_moonmark_per_card":2}},
+    {"id":"B03","name":"寒月","group":"Bridge","cost":2,"type":"Attack","rarity":"Uncommon","target":"单个敌人","base":"造成14伤害，施加2月痕。若这次施加月痕触发了月蚀：普通时获得2霜蚀；超然时抽1张牌。","upgrade":"伤害14→18。","roles":["Generator","Payoff","Bridge"],"archetypes":["月蚀","混合","冰爆","控霜"],"test":"只认可本牌直接施加月痕触发的月蚀，不包含月下霜；返霜不自损，须监测循环加速。","values":{"damage":14,"up_damage":18,"moonmark":2,"frost_on_eclipse":2,"trans_draw_on_eclipse":1}},
+    {"id":"U01","name":"整息","group":"Utility","cost":1,"type":"Skill","rarity":"Common","target":"自身","base":"抽2张牌。","upgrade":"抽牌2→3。","roles":["Utility"],"archetypes":["冰爆","月蚀","混合","控霜"],"test":"统一过牌基线，用于区分机制问题与摸不到关键牌。","values":{"draw":2,"up_draw":3}},
+    {"id":"U02","name":"守夜","group":"Utility","cost":1,"type":"Skill","rarity":"Common","target":"自身","base":"获得8格挡，抽1张牌。","upgrade":"格挡8→11。","roles":["Utility"],"archetypes":["冰爆","月蚀","混合","控霜"],"test":"无自损、无资源门槛的防御基线，帮助测量专属机制的真实成本。","values":{"block":8,"up_block":11,"draw":1}}
+  ],
+  "fixtures": {
+    "starter":{"test_strike":3,"test_defend":3,"F01":2,"M02":1,"B01":1},
+    "add_frost":{"F02":1,"F03":1,"F04":1,"F05":1,"U01":1},
+    "add_moon":{"M01":1,"M03":1,"M04":1,"M05":1,"U01":1},
+    "add_hybrid":{"B02":1,"B03":1,"F05":1,"M04":1,"U01":1},
+    "add_control":{"F03":2,"F04":2,"U02":1}
+  }
+}

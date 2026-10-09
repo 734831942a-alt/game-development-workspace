@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <AssemblyName>Frostmoon</AssemblyName><Version>0.2.2</Version><EnableDefaultCompileItems>false</EnableDefaultCompileItems><UseSharedCompilation>false</UseSharedCompilation>
+    <GameDir Condition="'$(GameDir)'==''">/Users/ayanami/Library/Application Support/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.app/Contents/Resources/data_sts2_macos_arm64</GameDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/**/*.cs"/>
+    <Reference Include="sts2"><HintPath>$(GameDir)/sts2.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GodotSharp"><HintPath>$(GameDir)/GodotSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GameDir)/0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BaseLib"><HintPath>vendor/BaseLib/BaseLib.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

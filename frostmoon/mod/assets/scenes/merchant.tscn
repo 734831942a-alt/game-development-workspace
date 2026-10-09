@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Texture2D" path="res://Frostmoon/character.png" id="1"]
+[node name="Frostmoon" type="Sprite2D"]
+texture = ExtResource("1")
+scale = Vector2(0.22,0.22)
+offset = Vector2(0,-768)

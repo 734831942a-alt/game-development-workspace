@@ -1,0 +1,248 @@
+{
+  "all": {
+    "count": 93,
+    "rarity": {
+      "Common": 20,
+      "Rare": 27,
+      "Token": 2,
+      "Uncommon": 38,
+      "Ancient": 2,
+      "Basic": 4
+    },
+    "types": {
+      "Skill": 41,
+      "Power": 22,
+      "Attack": 30
+    },
+    "roles": {
+      "Generator": 61,
+      "Enabler": 38,
+      "Utility": 37,
+      "Payoff": 43,
+      "Build-around": 22,
+      "Bridge": 34,
+      "Consumer": 14
+    },
+    "archetypes": {
+      "切换引擎": 38,
+      "敏捷格挡转化": 21,
+      "力量活力多段": 39,
+      "演奏会": 17,
+      "泛用": 8,
+      "生成协作": 8,
+      "虚无压缩": 3
+    },
+    "upgrades": {
+      "混合": 9,
+      "功能": 19,
+      "数值": 49,
+      "费用": 16
+    },
+    "pure_utility": 7,
+    "by_rarity": {
+      "Common": {
+        "count": 20,
+        "bridge": 7,
+        "pure_utility": 2,
+        "roles": {
+          "Generator": 15,
+          "Enabler": 11,
+          "Utility": 14,
+          "Payoff": 6,
+          "Consumer": 3,
+          "Bridge": 7
+        }
+      },
+      "Uncommon": {
+        "count": 38,
+        "bridge": 10,
+        "pure_utility": 5,
+        "roles": {
+          "Payoff": 19,
+          "Enabler": 13,
+          "Utility": 16,
+          "Generator": 23,
+          "Consumer": 3,
+          "Build-around": 11,
+          "Bridge": 10
+        }
+      },
+      "Rare": {
+        "count": 27,
+        "bridge": 14,
+        "pure_utility": 0,
+        "roles": {
+          "Payoff": 14,
+          "Build-around": 10,
+          "Bridge": 14,
+          "Generator": 18,
+          "Enabler": 11,
+          "Utility": 6,
+          "Consumer": 5
+        }
+      }
+    }
+  },
+  "reward": {
+    "count": 85,
+    "rarity": {
+      "Common": 20,
+      "Rare": 27,
+      "Uncommon": 38
+    },
+    "types": {
+      "Skill": 37,
+      "Power": 21,
+      "Attack": 27
+    },
+    "roles": {
+      "Generator": 56,
+      "Enabler": 35,
+      "Utility": 36,
+      "Payoff": 39,
+      "Build-around": 21,
+      "Bridge": 31,
+      "Consumer": 11
+    },
+    "archetypes": {
+      "切换引擎": 34,
+      "敏捷格挡转化": 17,
+      "力量活力多段": 34,
+      "演奏会": 17,
+      "泛用": 8,
+      "生成协作": 8,
+      "虚无压缩": 3
+    },
+    "upgrades": {
+      "混合": 9,
+      "功能": 14,
+      "数值": 47,
+      "费用": 15
+    },
+    "pure_utility": 7,
+    "by_rarity": {
+      "Common": {
+        "count": 20,
+        "bridge": 7,
+        "pure_utility": 2,
+        "roles": {
+          "Generator": 15,
+          "Enabler": 11,
+          "Utility": 14,
+          "Payoff": 6,
+          "Consumer": 3,
+          "Bridge": 7
+        }
+      },
+      "Uncommon": {
+        "count": 38,
+        "bridge": 10,
+        "pure_utility": 5,
+        "roles": {
+          "Payoff": 19,
+          "Enabler": 13,
+          "Utility": 16,
+          "Generator": 23,
+          "Consumer": 3,
+          "Build-around": 11,
+          "Bridge": 10
+        }
+      },
+      "Rare": {
+        "count": 27,
+        "bridge": 14,
+        "pure_utility": 0,
+        "roles": {
+          "Payoff": 14,
+          "Build-around": 10,
+          "Bridge": 14,
+          "Generator": 18,
+          "Enabler": 11,
+          "Utility": 6,
+          "Consumer": 5
+        }
+      }
+    }
+  },
+  "solo": {
+    "count": 80,
+    "rarity": {
+      "Common": 20,
+      "Rare": 25,
+      "Uncommon": 35
+    },
+    "types": {
+      "Skill": 34,
+      "Power": 19,
+      "Attack": 27
+    },
+    "roles": {
+      "Generator": 51,
+      "Enabler": 32,
+      "Utility": 35,
+      "Payoff": 38,
+      "Build-around": 21,
+      "Bridge": 27,
+      "Consumer": 11
+    },
+    "archetypes": {
+      "切换引擎": 31,
+      "敏捷格挡转化": 16,
+      "力量活力多段": 33,
+      "演奏会": 16,
+      "泛用": 8,
+      "虚无压缩": 3,
+      "生成协作": 3
+    },
+    "upgrades": {
+      "混合": 9,
+      "功能": 13,
+      "数值": 45,
+      "费用": 13
+    },
+    "pure_utility": 7,
+    "by_rarity": {
+      "Common": {
+        "count": 20,
+        "bridge": 7,
+        "pure_utility": 2,
+        "roles": {
+          "Generator": 15,
+          "Enabler": 11,
+          "Utility": 14,
+          "Payoff": 6,
+          "Consumer": 3,
+          "Bridge": 7
+        }
+      },
+      "Uncommon": {
+        "count": 35,
+        "bridge": 8,
+        "pure_utility": 5,
+        "roles": {
+          "Payoff": 18,
+          "Enabler": 12,
+          "Utility": 15,
+          "Generator": 20,
+          "Consumer": 3,
+          "Build-around": 11,
+          "Bridge": 8
+        }
+      },
+      "Rare": {
+        "count": 25,
+        "bridge": 12,
+        "pure_utility": 0,
+        "roles": {
+          "Payoff": 14,
+          "Build-around": 10,
+          "Bridge": 12,
+          "Generator": 16,
+          "Enabler": 9,
+          "Utility": 6,
+          "Consumer": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+tools/dotnet/
+tools/dotnet-home/
+tools/ilspy/
+tools/packages/
+tools/packer/
+references/
+vendor/
+bin/
+obj/
+.test-user/
+logs/
+dist/
+tools/test-app/

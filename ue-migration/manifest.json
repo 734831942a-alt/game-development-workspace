@@ -1,0 +1,31 @@
+{
+  "upstream_repository": "https://github.com/georgehuan1994/Unreal-Melee-Combat-System",
+  "upstream_commit": "dde95ebb68d2b355428acfbca0137ccc7080dd58",
+  "engine_version": "5.5.4",
+  "files": [
+    {
+      "path": "Config/DefaultEngine.ini",
+      "bytes": 16762,
+      "upstream_blob": "b83aee222daf6d96b977e4ff0245f6a5fb6f9e76",
+      "sha256": "876feee24a74776a13869013009c32c1c6e07532d62b0f0e35e775e64c844d63"
+    },
+    {
+      "path": "Content/CombatSystem/Blueprints/AI/BP_HumanoidEnemy.uasset",
+      "bytes": 75707,
+      "upstream_blob": "bae03d0d80681596074b2707bed9cb82d2c2f7d5",
+      "sha256": "a5b6f24e56da308b7893a1bfd8b9140b0cb22fffb25899924bc0bb0fb9b29452"
+    },
+    {
+      "path": "Content/CombatSystem/UI/WB_EnemyFelled.uasset",
+      "bytes": 84048,
+      "upstream_blob": "cf6dcaa2938ef4322262fdf6b4e3d8904b4d3aa7",
+      "sha256": "27149268a4f238b0dd9ca5adca0f351cd138921d5f9d31740906832269f2b326"
+    },
+    {
+      "path": "MeleeCombatSystem.uproject",
+      "bytes": 806,
+      "upstream_blob": "6451ebce1642405985597122c2648e6b67629f17",
+      "sha256": "084706a1dbe01c7d450c605cc1d7b6d155bcdce6e88d8d2952fc7f100fa103f6"
+    }
+  ]
+}

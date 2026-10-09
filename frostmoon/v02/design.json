@@ -1,0 +1,2058 @@
+{
+  "version": "0.2",
+  "date": "2026-10-06",
+  "status": "设计初稿 待用户审阅和游戏实测",
+  "cards": [
+    {
+      "id": "B01",
+      "name": "寒锋",
+      "type": "攻击",
+      "rarity": "初始",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成6点伤害。",
+      "upgraded": "造成9点伤害。",
+      "delta": "伤害6→9",
+      "builds": [
+        "泛用",
+        "血月"
+      ],
+      "role": "基础攻击",
+      "note": "单体；月被动可以附加月痕；血月翻倍攻击伤害。",
+      "mechanics": "基础数值",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "B02",
+      "name": "凝霜",
+      "type": "技能",
+      "rarity": "初始",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得5点格挡。",
+      "upgraded": "获得8点格挡。",
+      "delta": "格挡5→8",
+      "builds": [
+        "泛用",
+        "控霜"
+      ],
+      "role": "基础防御",
+      "note": "在冰形态作为技能使用，可触发本回合前两次的产霜。",
+      "mechanics": "基础数值",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "B03",
+      "name": "映月",
+      "type": "攻击",
+      "rarity": "初始",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成5点伤害。施加2月痕。进入月。",
+      "upgraded": "造成8点伤害。施加2月痕。进入月。",
+      "delta": "伤害5→8",
+      "builds": [
+        "切换",
+        "月蚀"
+      ],
+      "role": "月入口／叠层",
+      "note": "从冰打出时不追溯获得月被动；在血月打出会在结算末提前退场。",
+      "mechanics": "月痕、进入",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "B04",
+      "name": "归冬",
+      "type": "技能",
+      "rarity": "初始",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得7点格挡。回生2。进入冰。",
+      "upgraded": "获得10点格挡。回生3。进入冰。",
+      "delta": "格挡7→10；回生2→3",
+      "builds": [
+        "切换",
+        "血月",
+        "控霜"
+      ],
+      "role": "冰入口／恢复",
+      "note": "从月返回冰；回生不能治疗敌伤；若原本在冰则不算切换。",
+      "mechanics": "回生、进入",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C01",
+      "name": "寒月斩",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "支付2生命。获得2霜。造成9点伤害。",
+      "upgraded": "支付2生命。获得2霜。造成12点伤害。",
+      "delta": "伤害9→12",
+      "builds": [
+        "冰爆",
+        "月蚀",
+        "血月"
+      ],
+      "role": "自损／产霜／输出",
+      "note": "月被动的额外1生命和1霜在牌面效果之前处理；本牌付血触发的血月从下一张牌生效。",
+      "mechanics": "支付、霜",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C02",
+      "name": "冰棱",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成5点伤害2次。若至少有1霜，消耗1霜并获得3点格挡。",
+      "upgraded": "造成7点伤害2次。若至少有1霜，消耗1霜并获得5点格挡。",
+      "delta": "每击5→7；格挡3→5",
+      "builds": [
+        "冰爆",
+        "血月"
+      ],
+      "role": "多段输出／资源防御",
+      "note": "牌面消耗霜只在伤害后判定；月被动可能先用掉1霜。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C03",
+      "name": "踏雪",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得6点格挡。获得1霜。进入冰。",
+      "upgraded": "获得9点格挡。获得1霜。进入冰。",
+      "delta": "格挡6→9",
+      "builds": [
+        "切换",
+        "控霜"
+      ],
+      "role": "防御／产霜／入口",
+      "note": "即使无可回收生命，仍有防御和产霜价值。",
+      "mechanics": "霜、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C04",
+      "name": "薄暮",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得5点格挡。施加2月痕。进入月。",
+      "upgraded": "获得8点格挡。施加2月痕。进入月。",
+      "delta": "格挡5→8",
+      "builds": [
+        "切换",
+        "月蚀"
+      ],
+      "role": "防御入口／叠层",
+      "note": "技能牌进入月不额外烧血；本牌在冰开始则仍领取冰的技能产霜。",
+      "mechanics": "月痕、进入",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C05",
+      "name": "新月",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "施加2月痕。",
+      "upgraded": "施加3月痕。",
+      "delta": "月痕2→3",
+      "builds": [
+        "月蚀",
+        "控霜"
+      ],
+      "role": "低费叠层",
+      "note": "无抽牌；强度需要计入抽到并占用一张手牌的成本。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C06",
+      "name": "弦月",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成7点伤害。施加2月痕。",
+      "upgraded": "造成10点伤害。施加2月痕。",
+      "delta": "伤害7→10",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "基础攻击桥梁",
+      "note": "月形态有霜时可合计施加4月痕，但要付1生命、消耗1霜。",
+      "mechanics": "月痕",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C07",
+      "name": "冰镜",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得5点格挡。施加2月痕。",
+      "upgraded": "获得8点格挡。施加2月痕。",
+      "delta": "格挡5→8",
+      "builds": [
+        "控霜",
+        "月蚀"
+      ],
+      "role": "防御桥梁",
+      "note": "冰形态可在防御时引爆月蚀并回生，不必每次留在月。",
+      "mechanics": "月痕",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C08",
+      "name": "碎冰",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "消耗最多2霜。造成8点伤害，每消耗1霜额外造成3点伤害。",
+      "upgraded": "消耗最多2霜。造成11点伤害，每消耗1霜额外造成3点伤害。",
+      "delta": "基础伤害8→11",
+      "builds": [
+        "冰爆",
+        "血月"
+      ],
+      "role": "消耗霜／输出",
+      "note": "本牌主动消耗量自动取当前霜与2的较小值；月被动消耗不算本牌增伤。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C09",
+      "name": "雪藏",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "保留。获得8点格挡。",
+      "upgraded": "保留。获得11点格挡。",
+      "delta": "格挡8→11",
+      "builds": [
+        "泛用",
+        "控霜",
+        "血月"
+      ],
+      "role": "可保留防御",
+      "note": "为低血爆发回合留防御；没有额外状态要求。",
+      "mechanics": "保留",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C10",
+      "name": "月落",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "若目标至少有6月痕，移除6层并触发1次月蚀；否则施加3月痕。",
+      "upgraded": "若目标至少有6月痕，移除6层并触发1次月蚀；否则施加4月痕。",
+      "delta": "不足6层时施加3→4",
+      "builds": [
+        "月蚀",
+        "切换"
+      ],
+      "role": "提前引爆／补层",
+      "note": "提前引爆保留未移除的层数；它不是移除全部月痕。",
+      "mechanics": "月痕、月蚀",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C11",
+      "name": "退潮",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "回生3。抽1张牌。进入冰。",
+      "upgraded": "回生4。抽1张牌。进入冰。",
+      "delta": "回生3→4",
+      "builds": [
+        "切换",
+        "血月",
+        "月蚀"
+      ],
+      "role": "恢复／过牌／入口",
+      "note": "需要防御时不能把回生当作格挡；血月中使用会提前结束爆发。",
+      "mechanics": "回生、抽、进入",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C12",
+      "name": "割霜",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "支付3生命。获得2霜。消耗。",
+      "upgraded": "支付3生命。获得3霜。消耗。",
+      "delta": "霜2→3",
+      "builds": [
+        "冰爆",
+        "控霜",
+        "血月"
+      ],
+      "role": "加速产霜／调血",
+      "note": "冰形态的技能产霜另算；不提供抽牌，且每副本每战通常一次。",
+      "mechanics": "支付、霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C13",
+      "name": "望舒",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "抽2张牌。若本牌开始结算时处于月，回生1。",
+      "upgraded": "抽3张牌。若本牌开始结算时处于月，回生1。",
+      "delta": "抽牌2→3",
+      "builds": [
+        "泛用",
+        "月蚀",
+        "血月"
+      ],
+      "role": "抽牌／小额回生",
+      "note": "冰下侧重产霜，月下返少量自损；血月不同时被视为月。",
+      "mechanics": "回生、抽",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C14",
+      "name": "照影",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得3点格挡。抽2张牌，然后弃1张牌。",
+      "upgraded": "获得5点格挡。抽2张牌，然后弃1张牌。",
+      "delta": "格挡3→5",
+      "builds": [
+        "泛用",
+        "切换"
+      ],
+      "role": "筛手／防御",
+      "note": "弃牌不触发任何本角色专属收益；用于找切换牌与关键攻击。",
+      "mechanics": "抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C15",
+      "name": "双弧",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成4点伤害2次；每击后施加1月痕。",
+      "upgraded": "造成5点伤害2次；每击后施加1月痕。",
+      "delta": "每击4→5",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "多段攻击／分次叠层",
+      "note": "每次施加独立结算，可先触发月蚀再打第二击；目标死亡取消后续攻击。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C16",
+      "name": "霜刃回环",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成8点伤害。若本回合已经主动切换过冰月形态，抽1张牌。",
+      "upgraded": "造成11点伤害。若本回合已经主动切换过冰月形态，抽1张牌。",
+      "delta": "伤害8→11",
+      "builds": [
+        "切换",
+        "冰爆"
+      ],
+      "role": "切换回报／过牌",
+      "note": "血月入场与自动退场不满足条件；1费防止单靠本牌零费自循环。",
+      "mechanics": "抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C17",
+      "name": "月洒",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "对所有敌人造成7点伤害，并各施加1月痕。",
+      "upgraded": "对所有敌人造成10点伤害，并各施加1月痕。",
+      "delta": "群体伤害7→10",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "群攻／铺层",
+      "note": "不是单体攻击，不触发月形态的付血附加月痕。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C18",
+      "name": "寒潮",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得5点格挡。对所有敌人施加1月痕。",
+      "upgraded": "获得8点格挡。对所有敌人施加1月痕。",
+      "delta": "格挡5→8",
+      "builds": [
+        "控霜",
+        "月蚀"
+      ],
+      "role": "群体叠层／防御",
+      "note": "各目标独立检查月蚀；冰形态回生仅领取本回合首次月蚀的一次。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C19",
+      "name": "止水",
+      "type": "技能",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "消耗最多2霜。获得4点格挡，每消耗1霜额外获得4点格挡。",
+      "upgraded": "消耗最多2霜。获得6点格挡，每消耗1霜额外获得4点格挡。",
+      "delta": "基础格挡4→6",
+      "builds": [
+        "控霜",
+        "血月"
+      ],
+      "role": "资源换防御",
+      "note": "消耗霜与保持高霜的冻彻构成取舍；无霜仍有基础格挡。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "C20",
+      "name": "见隙",
+      "type": "攻击",
+      "rarity": "普通",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "造成7点伤害。若目标此时至少有4月痕，施加1层虚弱。",
+      "upgraded": "造成10点伤害。若目标此时至少有4月痕，施加2层虚弱。",
+      "delta": "伤害7→10；虚弱1→2",
+      "builds": [
+        "月蚀",
+        "泛用"
+      ],
+      "role": "阈值条件／减益",
+      "note": "检查发生在月被动的附加月痕之前；人工制品可抵挡虚弱。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U01",
+      "name": "镜月",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 0,
+      "base": "获得2霜。施加2月痕。选择进入冰或月。",
+      "upgraded": "获得2霜。施加2月痕。选择进入冰或月。",
+      "delta": "费用1→0",
+      "builds": [
+        "切换",
+        "月蚀",
+        "控霜"
+      ],
+      "role": "资源桥梁／可选入口",
+      "note": "进入相同形态不触发切换奖励；血月中选择基础形态会提前结束血月。",
+      "mechanics": "霜、月痕、进入",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U02",
+      "name": "月下霜",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "每回合你的前2次月蚀结算结束后，各获得1霜。",
+      "upgraded": "每回合你的前2次月蚀结算结束后，各获得2霜。",
+      "delta": "每次霜1→2",
+      "builds": [
+        "月蚀",
+        "冰爆",
+        "控霜"
+      ],
+      "role": "月蚀返霜",
+      "note": "同一次月蚀按一次计算，不按段数；霜满时溢出丢弃。",
+      "mechanics": "霜、月蚀",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U03",
+      "name": "潮汐",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "你的月蚀每结算一击，获得1点格挡。",
+      "upgraded": "你的月蚀每结算一击，获得2点格挡。",
+      "delta": "每击格挡1→2",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "击数转防御",
+      "note": "被格挡的一击仍算；敌人死亡后未结算的击数不预支格挡。",
+      "mechanics": "月蚀",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U04",
+      "name": "霜缝",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "每回合首次主动切换冰月形态时，抽1张牌。",
+      "upgraded": "每回合首次主动切换冰月形态时，抽2张牌。",
+      "delta": "抽牌1→2",
+      "builds": [
+        "切换",
+        "泛用"
+      ],
+      "role": "切换过牌",
+      "note": "同一回合反复进出不重置次数；血月出入不触发。",
+      "mechanics": "抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U05",
+      "name": "冻彻",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得4加上当前霜数2倍的格挡。不消耗霜。",
+      "upgraded": "获得7加上当前霜数2倍的格挡。不消耗霜。",
+      "delta": "基础格挡4→7",
+      "builds": [
+        "控霜",
+        "泛用"
+      ],
+      "role": "存量防御",
+      "note": "读取牌面执行到此处的霜；本牌触发的冰形态产霜在牌面结束后才给。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U06",
+      "name": "玄冰",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "造成16点伤害。若当前至少有4霜，施加2层虚弱。",
+      "upgraded": "造成20点伤害。若当前至少有4霜，施加2层虚弱。",
+      "delta": "伤害16→20",
+      "builds": [
+        "控霜",
+        "冰爆"
+      ],
+      "role": "高霜输出／减益",
+      "note": "不消耗霜；但月被动可能在伤害前消耗1霜，使条件失效。",
+      "mechanics": "霜",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U07",
+      "name": "冰河断",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "消耗最多3霜。造成12点伤害，每消耗1霜额外造成5点伤害。",
+      "upgraded": "消耗最多3霜。造成16点伤害，每消耗1霜额外造成5点伤害。",
+      "delta": "基础伤害12→16",
+      "builds": [
+        "冰爆",
+        "血月"
+      ],
+      "role": "霜的集中兑现",
+      "note": "满额基础伤害27→31；血月下54→62，再计目标格挡与修正。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U08",
+      "name": "霜解",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "消耗2霜。抽2张牌。消耗。",
+      "upgraded": "消耗2霜。抽3张牌。消耗。",
+      "delta": "抽牌2→3",
+      "builds": [
+        "控霜",
+        "冰爆",
+        "切换"
+      ],
+      "role": "霜换抽牌",
+      "note": "霜不足2不可打出；消耗保证单副本不能成为零费永久抽牌环。",
+      "mechanics": "霜、消耗、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U09",
+      "name": "凛冬留白",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "保留。从抽牌堆选1张攻击牌加入手牌。获得4点格挡。",
+      "upgraded": "保留。从抽牌堆选1张攻击牌加入手牌。获得7点格挡。",
+      "delta": "格挡4→7",
+      "builds": [
+        "冰爆",
+        "血月",
+        "泛用"
+      ],
+      "role": "攻击检索／防御",
+      "note": "检索不等于抽牌，不触发抽到事件；没有攻击牌时仅获得格挡。",
+      "mechanics": "保留、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U10",
+      "name": "满月",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "施加5月痕。抽1张牌。",
+      "upgraded": "施加6月痕。抽1张牌。",
+      "delta": "月痕5→6",
+      "builds": [
+        "月蚀",
+        "切换"
+      ],
+      "role": "高密度叠层",
+      "note": "升级改变与其他产痕牌拼到8层的组合，不降低费用。",
+      "mechanics": "月痕、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U11",
+      "name": "弦外之音",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "对所有敌人施加2月痕。抽1张牌。",
+      "upgraded": "对所有敌人施加3月痕。抽1张牌。",
+      "delta": "群体月痕2→3",
+      "builds": [
+        "月蚀",
+        "切换"
+      ],
+      "role": "群体铺层／过牌",
+      "note": "多目标时价值更高；人工制品按各目标分别处理。",
+      "mechanics": "月痕、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U12",
+      "name": "掩月",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "移除目标最多3月痕；每移除1层，获得3点格挡。若移除了3层，抽1张牌。",
+      "upgraded": "移除目标最多3月痕；每移除1层，获得4点格挡。若移除了3层，抽1张牌。",
+      "delta": "每层格挡3→4",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "月痕换防御",
+      "note": "月痕不足也可少量兑现；不会因此触发月蚀或月蚀回报。",
+      "mechanics": "月痕、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U13",
+      "name": "残月斩",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "移除目标最多3月痕。造成4点伤害，每移除1层额外造成4点伤害。",
+      "upgraded": "移除目标最多3月痕。造成7点伤害，每移除1层额外造成4点伤害。",
+      "delta": "基础伤害4→7",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "月痕换攻击",
+      "note": "可以放弃后续月蚀换即时斩杀；月被动在本牌结束前再补月痕。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U14",
+      "name": "寒月",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "造成12点伤害。施加2月痕。结算结束时，若本牌触发过月蚀，获得2霜并回生2。",
+      "upgraded": "造成16点伤害。施加2月痕。结算结束时，若本牌触发过月蚀，获得2霜并回生2。",
+      "delta": "伤害12→16",
+      "builds": [
+        "冰爆",
+        "月蚀",
+        "切换"
+      ],
+      "role": "引爆后返资源",
+      "note": "包括本牌的月被动附加月痕；同牌触发多次月蚀也只返还一次。",
+      "mechanics": "霜、月痕、月蚀、回生",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U15",
+      "name": "两仪",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "按开始形态执行。冰：获得8格挡、施加2月痕，进入月。月：回生3、获得2霜，进入冰。血月：获得8格挡并回生3，保持血月。",
+      "upgraded": "按开始形态执行。冰：获得11格挡、施加2月痕，进入月。月：回生4、获得2霜，进入冰。血月：获得11格挡并回生4，保持血月。",
+      "delta": "格挡8→11；回生3→4",
+      "builds": [
+        "切换",
+        "月蚀",
+        "血月"
+      ],
+      "role": "双向桥梁／血月守护",
+      "note": "只执行一个分支；血月分支是少量专属变化之一，不让全卡池都写三套描述。",
+      "mechanics": "霜、月痕、回生、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U16",
+      "name": "雪夜回响",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "从弃牌堆选1张牌加入手牌，并在本次回合结束时保留。消耗。",
+      "upgraded": "从弃牌堆选2张牌加入手牌，并在本次回合结束时保留。消耗。",
+      "delta": "回收1→2张",
+      "builds": [
+        "切换",
+        "冰爆",
+        "血月"
+      ],
+      "role": "定向回收／跨回合准备",
+      "note": "不可回收正在结算的自己或消耗堆的牌；不改变被回收牌的费用。",
+      "mechanics": "保留、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U17",
+      "name": "灼脉",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "支付4生命。获得1能量。抽1张牌。消耗。",
+      "upgraded": "支付4生命。获得1能量。抽2张牌。消耗。",
+      "delta": "抽牌1→2",
+      "builds": [
+        "血月",
+        "泛用"
+      ],
+      "role": "付血换行动",
+      "note": "生命须能全额非致命支付；本牌之后才可能进入血月。",
+      "mechanics": "支付、消耗、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U18",
+      "name": "回春",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "恢复4生命。消耗。",
+      "upgraded": "恢复6生命。消耗。",
+      "delta": "真正治疗4→6",
+      "builds": [
+        "泛用",
+        "血月"
+      ],
+      "role": "治疗敌伤／重新蓄势",
+      "note": "是真正治疗，可超过可回收额度；实际恢复仍会先冲销可回收生命。",
+      "mechanics": "恢复、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U19",
+      "name": "寒浴",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得5点格挡。回生6。",
+      "upgraded": "获得8点格挡。回生8。",
+      "delta": "格挡5→8；回生6→8",
+      "builds": [
+        "血月",
+        "切换",
+        "控霜"
+      ],
+      "role": "大额自损返还",
+      "note": "不切形态，可在血月期间恢复而保留爆发窗口。",
+      "mechanics": "回生",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U20",
+      "name": "刺骨",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 0,
+      "base": "每回合首次主动支付生命后，获得3点格挡并抽1张牌。",
+      "upgraded": "每回合首次主动支付生命后，获得3点格挡并抽1张牌。",
+      "delta": "费用1→0",
+      "builds": [
+        "血月",
+        "泛用"
+      ],
+      "role": "自损事件回报",
+      "note": "同牌主支付与月被动分开也只能领取本回合第一次；敌伤、荆棘不触发。",
+      "mechanics": "支付、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U21",
+      "name": "留灯",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得7点格挡。若本回合曾主动支付生命，抽1张牌。",
+      "upgraded": "获得10点格挡。若本回合曾主动支付生命，抽1张牌。",
+      "delta": "格挡7→10",
+      "builds": [
+        "血月",
+        "泛用"
+      ],
+      "role": "付血后的防御／抽牌",
+      "note": "血月自身不自动烧血，但入场前的支付仍能满足本回合条件。",
+      "mechanics": "支付、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U22",
+      "name": "血线",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "选择支付0、2或4生命。造成7点伤害，每点本次选择支付的生命额外造成2点伤害。",
+      "upgraded": "选择支付0、2或4生命。造成10点伤害，每点本次选择支付的生命额外造成2点伤害。",
+      "delta": "基础伤害7→10",
+      "builds": [
+        "血月",
+        "月蚀"
+      ],
+      "role": "精细调血／弹性攻击",
+      "note": "月被动的额外支付不加入本牌增伤；不能选择导致生命归零的档位。",
+      "mechanics": "支付",
+      "phase": "优先实现",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U23",
+      "name": "悬月",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "每回合首次月蚀结算结束后，将1张月屑加入手牌。",
+      "upgraded": "每回合首次月蚀结算结束后，将1张月屑+加入手牌。",
+      "delta": "生成月屑→月屑+",
+      "builds": [
+        "月蚀",
+        "切换"
+      ],
+      "role": "生成叠层／留给后续回合",
+      "note": "生成牌保留且消耗；每回合只有一次生成机会，不按击数生成。",
+      "mechanics": "月蚀",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U24",
+      "name": "霜囊",
+      "type": "能力",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "霜上限增加2。回合结束时，若至少有6霜，获得4点格挡。",
+      "upgraded": "霜上限增加3。回合结束时，若至少有6霜，获得4点格挡。",
+      "delta": "霜上限+2→+3",
+      "builds": [
+        "控霜",
+        "冰爆"
+      ],
+      "role": "储量扩展／持有回报",
+      "note": "不同副本可叠加上限和回合末格挡；达到新上限也不自动切形态。",
+      "mechanics": "霜",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U25",
+      "name": "观星",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "抽3张牌，然后弃1张牌。",
+      "upgraded": "抽4张牌，然后弃1张牌。",
+      "delta": "抽牌3→4",
+      "builds": [
+        "泛用",
+        "切换"
+      ],
+      "role": "筛手／寻找组件",
+      "note": "没有额外占卜或新资源；扩大找切换牌、引爆牌的能力。",
+      "mechanics": "抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U26",
+      "name": "折光",
+      "type": "攻击",
+      "rarity": "罕见",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "造成6点伤害2次，然后施加3月痕。",
+      "upgraded": "造成8点伤害2次，然后施加3月痕。",
+      "delta": "每击6→8",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "多段攻击／高密度叠层",
+      "note": "月被动仅附加一次；牌面两击不会烧两次血。",
+      "mechanics": "月痕",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U27",
+      "name": "薄冰",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "消耗1霜。获得7点格挡。消耗。",
+      "upgraded": "消耗1霜。获得10点格挡。消耗。",
+      "delta": "格挡7→10",
+      "builds": [
+        "控霜",
+        "血月"
+      ],
+      "role": "紧急防御／资源转换",
+      "note": "霜不足1不可打出；冰形态的产霜在支付之后结算，不能垫付。",
+      "mechanics": "霜、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "U28",
+      "name": "夜渡",
+      "type": "技能",
+      "rarity": "罕见",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "获得6点格挡。选择进入冰或月；若因此实际切换了基础形态，抽1张牌。",
+      "upgraded": "获得9点格挡。选择进入冰或月；若因此实际切换了基础形态，抽1张牌。",
+      "delta": "格挡6→9",
+      "builds": [
+        "切换",
+        "泛用"
+      ],
+      "role": "可选出口／过牌",
+      "note": "血月→冰或月不计为冰月切换，不抽牌；相同形态也不抽。",
+      "mechanics": "抽、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R01",
+      "name": "血月当空",
+      "type": "能力",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "每次进入血月时，抽2张牌。每次血月期间首次完成月蚀后，回生4。",
+      "upgraded": "每次进入血月时，抽3张牌。每次血月期间首次完成月蚀后，回生4。",
+      "delta": "入血月抽牌2→3",
+      "builds": [
+        "血月",
+        "月蚀"
+      ],
+      "role": "血月构筑支点",
+      "note": "打出时若已在血月，不补发入场抽牌；每个血月窗口只回血一次。",
+      "mechanics": "月蚀、回生、抽、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R02",
+      "name": "长夜不尽",
+      "type": "能力",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 1,
+      "base": "每回合前两次主动切换冰月形态时，各抽1张牌；第二次还获得1能量。",
+      "upgraded": "每回合前两次主动切换冰月形态时，各抽1张牌；第二次还获得1能量。",
+      "delta": "费用2→1",
+      "builds": [
+        "切换",
+        "泛用"
+      ],
+      "role": "双向循环引擎",
+      "note": "每回合封顶两次，切形态不重置计数；每个副本分别提供同次奖励。",
+      "mechanics": "抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R03",
+      "name": "冰封王座",
+      "type": "能力",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "每回合开始时获得1霜。回合结束时若至少有4霜，将最多8点当前格挡保留到下一回合。",
+      "upgraded": "每回合开始时获得1霜。回合结束时若至少有4霜，将最多12点当前格挡保留到下一回合。",
+      "delta": "保留格挡上限8→12",
+      "builds": [
+        "控霜",
+        "冰爆"
+      ],
+      "role": "高霜防御成长",
+      "note": "不凭空产生格挡；检查时霜不足4就不保留；多个副本的保留上限相加。",
+      "mechanics": "霜、保留",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R04",
+      "name": "万相归潮",
+      "type": "能力",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "月蚀每击基础伤害增加1。每回合首次月蚀结算结束后，回生2。",
+      "upgraded": "月蚀每击基础伤害增加2。每回合首次月蚀结算结束后，回生2。",
+      "delta": "每击增伤1→2",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "月蚀成长／回生",
+      "note": "回生按月蚀次数封顶一次；增伤先加再由血月乘2。",
+      "mechanics": "月蚀、回生",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R05",
+      "name": "月蚀尽头",
+      "type": "攻击",
+      "rarity": "稀有",
+      "cost": 3,
+      "up_cost": 3,
+      "base": "造成9点伤害。施加8月痕；若本次施加触发过月蚀且目标仍存活，再造成9点伤害。",
+      "upgraded": "造成12点伤害。施加8月痕；若本次施加触发过月蚀且目标仍存活，再造成12点伤害。",
+      "delta": "前后伤害各9→12",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "独立引爆／终结攻击",
+      "note": "基础总伤害34→40；含一次完整月蚀；被人工制品挡住施加时可能没有后段。",
+      "mechanics": "月痕、月蚀",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R06",
+      "name": "凝血为刃",
+      "type": "攻击",
+      "rarity": "稀有",
+      "cost": "X",
+      "up_cost": "X",
+      "base": "支付3生命。造成7点伤害X+1次。消耗。",
+      "upgraded": "支付3生命。造成9点伤害X+1次。消耗。",
+      "delta": "每击7→9",
+      "builds": [
+        "血月",
+        "冰爆"
+      ],
+      "role": "能量汇聚／多段终结",
+      "note": "X记录本牌消耗的能量；X=0仍打一击；月被动整张牌只处理一次。",
+      "mechanics": "支付、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R07",
+      "name": "终冬",
+      "type": "技能",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "获得20点格挡。回生8。进入冰。消耗。",
+      "upgraded": "获得26点格挡。回生10。进入冰。消耗。",
+      "delta": "格挡20→26；回生8→10",
+      "builds": [
+        "血月",
+        "控霜",
+        "切换"
+      ],
+      "role": "强防御出口／恢复",
+      "note": "明确以放弃剩余血月窗口换生存；回生仍受可回收额度限制。",
+      "mechanics": "回生、消耗、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R08",
+      "name": "借命",
+      "type": "技能",
+      "rarity": "稀有",
+      "cost": 0,
+      "up_cost": 0,
+      "base": "支付5生命。获得2能量。抽2张牌。消耗。",
+      "upgraded": "支付5生命。获得2能量。抽3张牌。消耗。",
+      "delta": "抽牌2→3",
+      "builds": [
+        "血月",
+        "泛用"
+      ],
+      "role": "爆发启动",
+      "note": "与灼脉形成稀有度递进；不解除血月冷却，也不让濒死时免付生命。",
+      "mechanics": "支付、消耗、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R09",
+      "name": "月有重圆",
+      "type": "技能",
+      "rarity": "稀有",
+      "cost": 1,
+      "up_cost": 1,
+      "base": "恢复6生命。若本牌开始时处于冰，获得2霜。消耗。",
+      "upgraded": "恢复9生命。若本牌开始时处于冰，获得2霜。消耗。",
+      "delta": "真正治疗6→9",
+      "builds": [
+        "血月",
+        "控霜",
+        "泛用"
+      ],
+      "role": "治疗敌伤／产霜",
+      "note": "能帮助再次达到55%生命蓄势线；在月或血月也保留完整治疗。",
+      "mechanics": "霜、恢复、消耗",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R10",
+      "name": "镜湖倒影",
+      "type": "技能",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "从抽牌堆选1张非X费用攻击牌加入手牌；其本回合费用变为0。获得6点格挡。消耗。",
+      "upgraded": "从抽牌堆选1张非X费用攻击牌加入手牌；其本回合费用变为0。获得9点格挡。消耗。",
+      "delta": "格挡6→9",
+      "builds": [
+        "冰爆",
+        "血月",
+        "月蚀"
+      ],
+      "role": "检索／费用转换",
+      "note": "无符合条件的牌时仍有格挡；并不自动打出，玩家可决定先回血还是先攻击。",
+      "mechanics": "消耗、抽",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R11",
+      "name": "红莲葬雪",
+      "type": "攻击",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "对所有敌人造成12点伤害。回生等于本牌实际造成的生命损失总和，最多6。进入冰。消耗。",
+      "upgraded": "对所有敌人造成16点伤害。回生等于本牌实际造成的生命损失总和，最多8。进入冰。消耗。",
+      "delta": "伤害12→16；回生上限6→8",
+      "builds": [
+        "血月",
+        "月蚀",
+        "切换"
+      ],
+      "role": "群攻／恢复／出口",
+      "note": "格挡吸收与过量伤害不计回血；击杀最后敌人仍结算本牌回生，但玩家死亡不能靠它复活。",
+      "mechanics": "回生、消耗、进入",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    },
+    {
+      "id": "R12",
+      "name": "碎月成星",
+      "type": "能力",
+      "rarity": "稀有",
+      "cost": 2,
+      "up_cost": 2,
+      "base": "月蚀增加2击。月蚀每击基础伤害降低1，最低为1。",
+      "upgraded": "月蚀增加2击。",
+      "delta": "移除每击减伤",
+      "builds": [
+        "月蚀",
+        "血月"
+      ],
+      "role": "击数构筑支点",
+      "note": "基础4×4变3×6；升级变4×6。多副本增加击数，未升级副本各减1基础伤害；潮汐随击数增加。",
+      "mechanics": "月蚀",
+      "phase": "完整卡池候选",
+      "review": "待审阅",
+      "review_notes": "",
+      "revised_effect": ""
+    }
+  ],
+  "tokens": [
+    {
+      "id": "T01",
+      "name": "余烬覆雪",
+      "cost": 0,
+      "up_cost": 0,
+      "type": "技能",
+      "rarity": "衍生",
+      "base": "保留。获得6格挡。回生3。消耗。",
+      "upgraded": "保留。获得9格挡。回生4。消耗。",
+      "origin": "血月退出时预约；下个自身回合开始时、常规抽牌后加入手牌。每次血月只预约1张普通版。",
+      "note": "不占用永久牌组；手牌满则按生成牌溢出规则送弃牌堆。能被外部升级，但默认不会生成升级版。"
+    },
+    {
+      "id": "T02",
+      "name": "月屑",
+      "cost": 0,
+      "up_cost": 0,
+      "type": "技能",
+      "rarity": "衍生",
+      "base": "保留。施加2月痕。消耗。",
+      "upgraded": "保留。施加3月痕。消耗。",
+      "origin": "悬月／悬月+每回合第一次月蚀后生成。",
+      "note": "0费但仍是一张技能牌；在冰可领取剩余的技能产霜次数。"
+    }
+  ],
+  "decks": [
+    {
+      "name": "冰月往复  主推样例",
+      "purpose": "首先验证冰月桥梁、月蚀回报与恢复回合。",
+      "entries": [
+        {
+          "id": "B01",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "B02",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "B03",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C01",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C03",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C06",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "C07",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C10",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C11",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C13",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U01",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U03",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U14",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U19",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U28",
+          "count": 1,
+          "upgrade": false
+        }
+      ],
+      "route": "冰蓄霜→薄暮或映月进月→弦月等加速叠痕→月落引爆→归冬或退潮回冰。",
+      "warning": "20张、无稀有牌；不要求低血量。可用长夜不尽替换一张寒锋观察引擎上限。"
+    },
+    {
+      "name": "极霜守夜  高霜样例",
+      "purpose": "验证持有霜与消费霜的取舍，以及不追血月的生存。",
+      "entries": [
+        {
+          "id": "B01",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "B02",
+          "count": 3,
+          "upgrade": false
+        },
+        {
+          "id": "B03",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C01",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C08",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "C09",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C19",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C06",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C13",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U05",
+          "count": 2,
+          "upgrade": true
+        },
+        {
+          "id": "U06",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U07",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U19",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U24",
+          "count": 1,
+          "upgrade": true
+        }
+      ],
+      "route": "尽量维持4至6霜；冻彻防守、玄冰虚弱；有斩杀机会才用冰河断或碎冰花掉库存。",
+      "warning": "无稀有牌。两张冻彻均按升级版测试；可用冰封王座换一张凝霜测试长战。"
+    },
+    {
+      "name": "月蚀潮汐  连续引爆样例",
+      "purpose": "验证多段效果、群体标记与月蚀返霜。",
+      "entries": [
+        {
+          "id": "B01",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B02",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "B03",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C05",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "C06",
+          "count": 2,
+          "upgrade": true
+        },
+        {
+          "id": "C07",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C10",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C11",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C17",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C18",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C13",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U02",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U03",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U10",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U11",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U25",
+          "count": 1,
+          "upgrade": false
+        }
+      ],
+      "route": "月下霜和潮汐布置后，以新月、弦月、满月反复凑8；有回血需求时回冰再引爆。",
+      "warning": "无稀有牌；两张弦月均升级。可分别加入万相归潮、碎月成星，观察伤害与每击格挡是否同时失控。"
+    },
+    {
+      "name": "血月回潮  压血样例",
+      "purpose": "验证可控付血、血月结束后的恢复，以及再次蓄势。",
+      "entries": [
+        {
+          "id": "B01",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B02",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "B03",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "B04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C01",
+          "count": 2,
+          "upgrade": false
+        },
+        {
+          "id": "C04",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C06",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C11",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "C13",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "C15",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U17",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U18",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U19",
+          "count": 2,
+          "upgrade": true
+        },
+        {
+          "id": "U20",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U21",
+          "count": 1,
+          "upgrade": false
+        },
+        {
+          "id": "U22",
+          "count": 1,
+          "upgrade": true
+        },
+        {
+          "id": "U28",
+          "count": 1,
+          "upgrade": false
+        }
+      ],
+      "route": "先正常攻防；接近40%时用血线选档位或灼脉调整，留攻击和寒浴给血月；下一回合用余烬覆雪恢复。",
+      "warning": "无稀有牌；两张寒浴均升级。不要从满血无目的烧到28。可用血月当空换寒锋、红莲葬雪换留灯。"
+    }
+  ],
+  "parameters": [
+    [
+      "max_hp",
+      "最大生命",
+      72,
+      "68 / 72 / 76",
+      "同时影响低血与重新蓄势线。"
+    ],
+    [
+      "energy",
+      "基础每回合能量",
+      3,
+      "固定3",
+      "在角色机制未稳定前不添加额外基础能量。"
+    ],
+    [
+      "draw",
+      "基础每回合抽牌",
+      5,
+      "固定5",
+      "检验切换牌和回生牌是否能及时到手。"
+    ],
+    [
+      "frost_cap",
+      "霜基础上限",
+      6,
+      "6 / 8",
+      "过低会过度溢出；过高会弱化控霜决策。"
+    ],
+    [
+      "ice_skill_limit",
+      "冰每回合技能产霜次数",
+      2,
+      "2",
+      "主动切形态不重置。"
+    ],
+    [
+      "ice_skill_frost",
+      "每次冰技能产霜",
+      1,
+      "1",
+      "普通版霜资源供给速度。"
+    ],
+    [
+      "ice_eclipse_heal",
+      "冰每回合首次月蚀回生",
+      2,
+      "1 / 2 / 3",
+      "让月的布局能支持冰的恢复。"
+    ],
+    [
+      "moon_attack_limit",
+      "月每回合附加月痕次数",
+      2,
+      "1 / 2 / 3",
+      "每张单体攻击算一次，多段不加次数。"
+    ],
+    [
+      "moon_hp",
+      "月每次被动支付生命",
+      1,
+      "1 / 2",
+      "烧血速度与被动月痕收益绑定。"
+    ],
+    [
+      "moon_mark",
+      "月被动基础月痕",
+      1,
+      "1",
+      "有霜时再多施加1。"
+    ],
+    [
+      "moon_frost_bonus",
+      "月每消耗1霜额外月痕",
+      1,
+      "1 / 2",
+      "需要与基础叠痕牌一起算阈值效率。"
+    ],
+    [
+      "mark_threshold",
+      "月痕阈值",
+      8,
+      "8 / 10",
+      "扣阈值保留溢出，每个敌人独立。"
+    ],
+    [
+      "eclipse_damage",
+      "月蚀每击基础伤害",
+      4,
+      "3 / 4",
+      "与段数分开测试。"
+    ],
+    [
+      "eclipse_hits",
+      "月蚀基础击数",
+      4,
+      "3 / 4",
+      "改变段数会同时改变潮汐格挡。"
+    ],
+    [
+      "blood_low",
+      "血月触发比例",
+      0.4,
+      "0.35 / 0.40 / 0.45",
+      "向下取整；实际生命不高于该值。"
+    ],
+    [
+      "blood_high",
+      "血月重新蓄势比例",
+      0.55,
+      "0.50 / 0.55 / 0.60",
+      "向上取整；必须高于低线。"
+    ],
+    [
+      "blood_mult",
+      "血月伤害倍率",
+      2,
+      "固定2",
+      "只覆盖攻击牌与月蚀，不翻倍所有生命流失。"
+    ],
+    [
+      "blood_recovery",
+      "血月后的完整禁触发回合",
+      1,
+      "1",
+      "额外自己的回合也计入。"
+    ],
+    [
+      "ember_block",
+      "余烬覆雪基础格挡",
+      6,
+      "4 / 6 / 8",
+      "优先调整这个补偿，不用巨大惩罚制造空白回合。"
+    ],
+    [
+      "ember_heal",
+      "余烬覆雪基础回生",
+      3,
+      "2 / 3 / 4",
+      "属于返还自损，不是凭空治疗。"
+    ]
+  ],
+  "sources": [
+    [
+      "观者猛虎下山",
+      "https://www.slaythespire.gg/cards/watcher/Rushdown",
+      "切换事件可以提供抽牌动力。",
+      "本案切换回报限制每回合次数；避免给冰月切换常驻无限返能返牌。"
+    ],
+    [
+      "观者神格",
+      "https://slay-the-spire.fandom.com/wiki/Divinity",
+      "神格提供短期攻击爆发；原版攻击倍率是3倍。",
+      "本案血月采用用户提出的2倍，且不额外赠送3能量；月蚀明确纳入倍率。"
+    ],
+    [
+      "铁甲收割",
+      "https://www.slaythespire.gg/cards/ironclad/Reaper",
+      "输出与恢复可以写在同一张牌里。",
+      "红莲葬雪改为有额度、有上限的回生，避免伤害成长同时无限抬高治疗。"
+    ],
+    [
+      "万智牌 Fateful Hour",
+      "https://magic.wizards.com/en/news/feature/dark-ascension-mechanics",
+      "低生命会改变牌的作用；原机制回血超过临界值时会立刻失效。",
+      "血月在入场后锁定到回合末，因此玩家敢于在爆发中回血。"
+    ],
+    [
+      "Mark Rosewater 回顾",
+      "https://magic.wizards.com/en/news/making-magic/trivial-pursuit-all-innistrad",
+      "作者认为5点或以下生命的触发空间过窄，难以支撑足够设计。",
+      "血月专属牌只占少数，并保留非血月用途；避免整套卡池必须濒死才有价值。"
+    ],
+    [
+      "Bloodborne 回血窗口",
+      "https://blog.ja.playstation.com/2015/03/13/20150313_bloodborne/",
+      "受伤后仍有机会通过进攻挽回部分生命。",
+      "本案只记录主动支付的可回收生命，改成回合制调度；不照搬实时计时器。"
+    ],
+    [
+      "若叶睦既有源码研究",
+      "https://github.com/FFTYYY/sts2-MzmChar-mod/tree/03dc9add4db955351e05bcfce06cf2889f25a695",
+      "此前已研究普通牌桥梁、构筑支点和功能升级的分布。",
+      "让普通牌先建立资源交互，稀有牌加强引擎；这些是设计启发，不是照抄该Mod效果。"
+    ]
+  ],
+  "starter": {
+    "hp": 72,
+    "energy": 3,
+    "draw": 5,
+    "form": "冰",
+    "cards": [
+      {
+        "id": "B01",
+        "count": 4
+      },
+      {
+        "id": "B02",
+        "count": 4
+      },
+      {
+        "id": "B03",
+        "count": 1
+      },
+      {
+        "id": "B04",
+        "count": 1
+      }
+    ],
+    "relic_name": "双相佩",
+    "relic": "战斗开始时获得2霜。每回合首次主动在冰与月之间实际切换时，获得3格挡。"
+  },
+  "first_implementation": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "C01",
+    "C04",
+    "C06",
+    "C07",
+    "C10",
+    "C11",
+    "C13",
+    "U01",
+    "U03",
+    "U14",
+    "U19",
+    "U22"
+  ]
+}

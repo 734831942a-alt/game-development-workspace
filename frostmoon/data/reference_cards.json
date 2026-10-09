@@ -1,0 +1,2716 @@
+{
+  "repository": "https://github.com/FFTYYY/sts2-MzmChar-mod",
+  "commit": "03dc9add4db955351e05bcfce06cf2889f25a695",
+  "retrieved": "2026-10-03",
+  "method": "All 93 card classes reviewed against OnPlay, OnUpgrade, constructors, keywords, and relevant powers. Not compiled or runtime-tested.",
+  "cards": [
+    {
+      "id": "Acting",
+      "name": "演技",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "抽2；获得1层转换人格；立即切换形态。",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽2→3；额外获得本回合2力量、2敏捷。",
+      "upgrade_delta": "抽2→3；额外获得本回合2力量、2敏捷。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "升级后同时支援力量与敏捷，基础版不计桥梁。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Acting.cs#L45",
+      "source_sha256": "67361759341d4f270e787c60b930b10b8716deaabab4d75b2a6a2cc404025e84",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Addiction",
+      "name": "依存症",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每次实际切换形态，获得4格挡。",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加固有。",
+      "upgrade_delta": "增加固有。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "切换次数转化为防御，可接格挡转活力。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Addiction.cs#L35",
+      "source_sha256": "9a7fed50f0640fdcc151d6b3b5b64e6369e2c451f0e8ca9047f2f5a69099fe9b",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Alone",
+      "name": "独处",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：8格挡，每3敏捷获得1力量；墨：10伤害，每3力量获得1敏捷。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡8→12；伤害10→15。",
+      "upgrade_delta": "格挡8→12；伤害10→15。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "敏捷与力量互相转化；正数层数按整数除法。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Alone.cs#L29",
+      "source_sha256": "2894fe6c447a883fc5a6fe5131aaec283f7c0bbfbd0f4350d8da747a6b3f114f",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "BackPersona",
+      "name": "里人格",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Token",
+      "target": "Self",
+      "scope": "生成牌",
+      "multiplayer_only": false,
+      "base_effect": "进入小墨；下次回合开始时保留格挡。【保留】",
+      "upgrade_effect": "基础效果同左，应用以下变化：额外获得7格挡。",
+      "upgrade_delta": "额外获得7格挡。",
+      "keywords": "保留",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "形态调度连接格挡存储。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/BackPersona.cs#L50",
+      "source_sha256": "9123c732b82a51a085cab551cf5b2350f4bb7ad9483bc9b1b2062a4903610389",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "Backstage",
+      "name": "候场",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1演艺热情；演奏会：12格挡。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡12→16。",
+      "upgrade_delta": "格挡12→16。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏牌均有虚无、消耗；离开窗口仍能产资源。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Backstage.cs#L45",
+      "source_sha256": "13744c71dd69ba786cb52d941629d957703af2de17cc4977d62081f7c22ff042",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "BeatMirror",
+      "name": "砸碎镜子",
+      "cost": 0,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：3活力，目标1易伤；墨：5伤害，目标1虚弱。",
+      "upgrade_effect": "基础效果同左，应用以下变化：易伤1→2；伤害5→8。",
+      "upgrade_delta": "易伤1→2；伤害5→8。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "铺垫与伤害同卡，不因双形态自动记为跨流派桥梁。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/BeatMirror.cs#L48",
+      "source_sha256": "d248787550a9484bdd5cf1edfd9b5adcb068f92dc43e606c0b8dac9d5f40c9d5",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "BecomeMain",
+      "name": "成为本尊",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "本回合禁止切换。睦：获得3能量；墨：随机敌人15伤害，15格挡。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：移除消耗。",
+      "upgrade_delta": "移除消耗。",
+      "keywords": "消耗",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "支付1后睦净得2能量；升级允许战斗内重复循环。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/BecomeMain.cs#L49",
+      "source_sha256": "be4e547c76e1a5281209daed1e183561dc9ab1731c48755a584b8b6b87965841",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "BrainBully",
+      "name": "脑内霸凌",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：2回合内，目标易伤生效时，伤害倍率额外+0.5；墨：10伤害，2回合内目标虚弱生效时，输出倍率额外-0.25。",
+      "upgrade_effect": "基础效果同左，应用以下变化：两种额外效果持续2→4回合。",
+      "upgrade_delta": "两种额外效果持续2→4回合。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Payoff",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "效果本身不施加易伤或虚弱；在原倍率上加减，非再次乘1.5或0.75。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/BrainBully.cs#L47",
+      "source_sha256": "458541e12d0292d361ca0e2d7a2d81a48d132cd9593a7469641aa8425cd42695",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "BullyingYou",
+      "name": "霸凌着你",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "AnyAlly",
+      "scope": "普通奖励",
+      "multiplayer_only": true,
+      "base_effect": "另一玩家获得2能量、抽1，受到3不可格挡且不受增减伤修正的伤害，并获得2易伤。",
+      "upgrade_effect": "基础效果同左，应用以下变化：能量2→3；抽1→2。",
+      "upgrade_delta": "能量2→3；抽1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "生成协作"
+      ],
+      "roles": [
+        "Generator",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "仅多人；这里的自损走伤害事件，不能视为无事件HP扣除。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/BullyingYou.cs#L43",
+      "source_sha256": "b40540309d6653a67bfeb192575addc14ba119d9f9a5bb0115f3ba9f155a948b",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "CantPlayAtAll",
+      "name": "全都不会弹！",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：永久4力量、失去1敏捷；墨：永久4敏捷、失去1力量。",
+      "upgrade_effect": "基础效果同左，应用以下变化：力量4→6；敏捷4→5。",
+      "upgrade_delta": "力量4→6；敏捷4→5。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "同一能力根据打出形态选择攻击或防御成长。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/CantPlayAtAll.cs#L42",
+      "source_sha256": "a178ef09736ee8d772c493f0f2b905e28f926c2f49f94d8d09b3d102c11b6c35",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Catharsis",
+      "name": "宣泄",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：本回合6力量；墨：7伤害×2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦额外4活力；每段伤害7→9。",
+      "upgrade_delta": "睦额外4活力；每段伤害7→9。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "一条攻击命令的多段攻击；新增活力属于资源维度变化。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Catharsis.cs#L45",
+      "source_sha256": "e0bd1f62b6edf1246b1ae38b165311535ace52bd85d4c11aad8bf8c883799d47",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "ChaseCat",
+      "name": "猫猫",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "RandomEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：抽2；墨：3伤害×3，每段独立随机目标。",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽2→3；每段3→4。",
+      "upgrade_delta": "抽2→3；每段3→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Consumer",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "多段兑现力量与活力，抽牌提供低配用途。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/ChaseCat.cs#L36",
+      "source_sha256": "56e1a67f2d6e11d56855bf3205762fc8a4b510fb1b032abcc4caabf872973231",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Comedian",
+      "name": "搞笑艺人",
+      "cost": 3,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每实际切换2次形态，为下回合积累1能量。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用3→2。",
+      "upgrade_delta": "费用3→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "每份能力独立计数；能量延迟到账。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Comedian.cs#L27",
+      "source_sha256": "1060b661c5625a62007d0c822c841e2bfa78d47d43c147d75a475d29dfe3a774",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Contemplate",
+      "name": "低头沉思",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：9格挡；墨：弃牌堆选1张回手。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡9→13；回手的牌获得保留。",
+      "upgrade_delta": "格挡9→13；回手的牌获得保留。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "回收不限定某个机制，按纯Utility统计。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Contemplate.cs#L33",
+      "source_sha256": "876017076a4f9a77d690d0fc72118a09b01faf24ecb88484160ed5d88a357af7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Crumble",
+      "name": "崩坏",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：目标6易伤；墨：对目标造成(3+目标易伤层数)伤害×3。",
+      "upgrade_effect": "基础效果同左，应用以下变化：易伤6→8；攻击次数3→4。",
+      "upgrade_delta": "易伤6→8；攻击次数3→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "将易伤层数再次作为基础伤害系数。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Crumble.cs#L57",
+      "source_sha256": "9a746fb1d2510aa5de6dc6293287985dbe301667dc891a55434799c7763ccfa3",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "CryInRain",
+      "name": "雨中流泪",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "按打出前本战斗切换次数，每次获得本回合1力量。睦：目标1易伤并进入墨；墨：5伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：每次切换对应临时力量1→2。",
+      "upgrade_delta": "每次切换对应临时力量1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "切换历史变成攻击成长；本牌随后造成的切换不计入本次快照。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/CryInRain.cs#L31",
+      "source_sha256": "e05f43cf3c13e1d24df671c868998016d75812dbe26cc175fde12377764d2c46",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "CutLine",
+      "name": "剪切线",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "回合结束前，每1层若叶睦临时力量获得2活力。",
+      "upgrade_effect": "基础效果同左，应用以下变化：每层2→3活力；增加固有。",
+      "upgrade_delta": "每层2→3活力；增加固有。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "在临时力量清理前结算，将当回合投资带入后续回合。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/CutLine.cs#L41",
+      "source_sha256": "f4f8266c1f7507b4382ed5b97119b8054eb37055212a7e47083d9a21032b3a5e",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "DeathLake",
+      "name": "死亡之湖",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "以小墨开始回合时获得2永久力量。【虚无】",
+      "upgrade_effect": "基础效果同左，应用以下变化：移除虚无。",
+      "upgrade_delta": "移除虚无。",
+      "keywords": "虚无",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Build-around"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "要求回合起始形态，不是打出时形态。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/DeathLake.cs#L33",
+      "source_sha256": "e43560c59b9a12a80239e224d0b4b12a532ff5c26b14766a024f6bc3365612a5",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "DevourSelf",
+      "name": "吞噬自己",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：获得当前敏捷×2活力，进入墨；墨：造成当前敏捷×3伤害，进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：活力倍率2→3；伤害倍率3→4。",
+      "upgrade_delta": "活力倍率2→3；伤害倍率3→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "敏捷投资可转换成攻击回报，并推进切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/DevourSelf.cs#L40",
+      "source_sha256": "b060b316428b5fe2a5fcd8f80b2414d3b8114cd86538a055a301a984046584bb",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Disharmony",
+      "name": "不和谐音",
+      "cost": 0,
+      "type": "Attack",
+      "rarity": "Ancient",
+      "target": "AllEnemies",
+      "scope": "先古特殊",
+      "multiplayer_only": false,
+      "base_effect": "每次结算对全体造成0基础伤害×2；设置BaseReplayCount=2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：每次结算追加1次0基础格挡。",
+      "upgrade_delta": "每次结算追加1次0基础格挡。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "由古老牙齿把睦头人出击转换得到；总重放行为需游戏运行验证，勿只读本地化。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Disharmony.cs#L43",
+      "source_sha256": "527e29f92878df7f110047a3f6f9a048bfda29205a6416c241d6a630ab0b26c0",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "Disintegration",
+      "name": "人格解体",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每次实际切换，随机给本战斗1张尚无虚无的牌添加虚无。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用1→0。",
+      "upgrade_delta": "费用1→0。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "虚无压缩"
+      ],
+      "roles": [
+        "Enabler",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "切换推进牌堆压缩；虚无不等于立即消耗，也可能移除关键牌。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Disintegration.cs#L27",
+      "source_sha256": "3d8edac1c2985e6e005176da7b265b1e704096e68c02a88c2803d06dd0543f7b",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Distort",
+      "name": "扭曲",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：本回合失去2敏捷，获得1能量，进入墨；墨：随机敌人5伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：敏捷损失2→1；伤害5→6。",
+      "upgrade_delta": "敏捷损失2→1；伤害5→6。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "以暂时防御代价换切换和能量。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Distort.cs#L47",
+      "source_sha256": "789336c37784b3b5c87f9609f442d9afc876795cadf64c9091997a26a93fa82f",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "DollHeart",
+      "name": "人偶之心",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "此后每打出1张能力牌，获得1力量。",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加固有。",
+      "upgrade_delta": "增加固有。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Build-around"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "安装能力的这张牌自身不触发新加的能力，Power显式跳过一次。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/DollHeart.cs#L27",
+      "source_sha256": "b0ef4a4f2fb00398bcda9314d935a3a6da497740a4c6ac32d1441729436c369a",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "DollWaltz",
+      "name": "人偶们的轮舞",
+      "cost": "X",
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "RandomEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "X费；随机0基础伤害×floor(1.5X)，获得0基础格挡X次。",
+      "upgrade_effect": "基础效果同左，应用以下变化：攻击次数floor(1.5X)→2X。",
+      "upgrade_delta": "攻击次数floor(1.5X)→2X。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Consumer",
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "通过多段伤害和多次格挡同时放大力量与敏捷。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/DollWaltz.cs#L46",
+      "source_sha256": "ddd2db041105248d12150ba4fa18ee6bb8758dd97328455cb935a2cb48f48114",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Emptiness",
+      "name": "空洞",
+      "cost": 2,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得本回合(3+此牌本局累计打出次数)敏捷；打出后永久增加获得量1。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "消耗",
+      "archetypes": [
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Build-around"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "源码BaseDex=3；注释写4已过时；成长跨战斗保存。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Emptiness.cs#L43",
+      "source_sha256": "430dd246bd47efce06db838046cbcf6da670f9e94beae7d508fcf9de1bf523a7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Encore",
+      "name": "安可",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "演奏会回合结束获得1演艺热情；该能力总回补上限2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：回补1→2，上限仍2。",
+      "upgrade_delta": "回补1→2，上限仍2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "多份安可不能无限提高回补量。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Encore.cs#L40",
+      "source_sha256": "e40a70ca94e49cd74fc37b53968d4804da18c6a67886e479cde99ff1d9f33053",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Ensemble",
+      "name": "合奏",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": true,
+      "base_effect": "所有其他存活玩家进入睦，各向抽牌堆随机位置加入(1+此牌本战斗先前打出次数)张随机不同演奏牌。",
+      "upgrade_effect": "基础效果同左，应用以下变化：初始生成数1→2。",
+      "upgrade_delta": "初始生成数1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会",
+        "生成协作",
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "多人协作连接演奏、生成和切换；单次不同模板，无足够候选则少生成。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Ensemble.cs#L69",
+      "source_sha256": "28c098709ab4da6189d5bea6a10ff4f3731cfa20eb3ff8442bbb7a3cd8ff70eb",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "Escape",
+      "name": "逃离",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得本回合3敏捷；进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：敏捷3→5。",
+      "upgrade_delta": "敏捷3→5。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "切换行动同时准备防御属性。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Escape.cs#L40",
+      "source_sha256": "78c59944a23fccace5063367ba0a3121759a94c249850c28aba5020dce953866",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "FallIntoAbyss",
+      "name": "坠入深渊",
+      "cost": 0,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "抽2，获得2能量、12活力；本战斗禁止再进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽2→3；活力12→20。",
+      "upgrade_delta": "抽2→3；活力12→20。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Build-around"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "打出时不会自动进入墨；从睦打出仍需另行转入墨；封锁切换流。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/FallIntoAbyss.cs#L42",
+      "source_sha256": "69d68369fd05c6dcb5e215a1291003c13cf2c26a252894ec8da7f1cff156fa15",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "FearlessOfDeath",
+      "name": "无惧死亡",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "本战斗下一次死亡时以1生命复活。",
+      "upgrade_effect": "基础效果同左，应用以下变化：复活生命1→20。",
+      "upgrade_delta": "复活生命1→20。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "一次性死亡保护；未在游戏中验证时序。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/FearlessOfDeath.cs#L34",
+      "source_sha256": "1847c28177faf6bd5ce6519174831f0cb7106227b5a7a7e0a0535794890888b8",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "FightForBody",
+      "name": "争夺身体",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "按本回合非起手抽牌数N：睦获得4N格挡并进入墨；墨造成5N伤害并进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "额外抽牌历史连接防御兑现和切换；N不含正常回合抽牌。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/FightForBody.cs#L39",
+      "source_sha256": "6a816fad22478d65893cb617a2ee1a3b557a130bab6bcd1ee08a8e597abb88e7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "FrontPersona",
+      "name": "表人格",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Token",
+      "target": "Self",
+      "scope": "生成牌",
+      "multiplayer_only": false,
+      "base_effect": "进入睦；获得1能量。【保留】",
+      "upgrade_effect": "基础效果同左，应用以下变化：额外获得4活力。",
+      "upgrade_delta": "额外获得4活力。",
+      "keywords": "保留",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "升级新增攻击铺垫；初始遗物生成，基础版不计Bridge。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/FrontPersona.cs#L48",
+      "source_sha256": "bfd5068662c17a5de39fc273e4a7e031c745149b21a017f6df090012561534d7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "FunnyFace",
+      "name": "做鬼脸",
+      "cost": 0,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "造成7伤害；进入墨。",
+      "upgrade_effect": "基础效果同左，应用以下变化：伤害7→10。",
+      "upgrade_delta": "伤害7→10。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "已经是墨时不发生实际切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/FunnyFace.cs#L36",
+      "source_sha256": "ab5ed89d3e67fcc4e8c49d00954d2e715f30470e40a56826c26ec1c02a886572",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "GhostScream",
+      "name": "鬼叫",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：每已有4活力再获得2活力；墨：12伤害并施加2虚弱。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "睦增量为floor(活力/4)×2，0活力不会凭空起动。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/GhostScream.cs#L29",
+      "source_sha256": "fa0638318333457c850b2dfe0cea9b10c7f1d661d2336ccaeba129099e0933d1",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "GreenhouseGirl",
+      "name": "温室少女",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：8格挡；墨：从弃牌堆选择至多2张消耗。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡8→10；最多消耗2→3张。",
+      "upgrade_delta": "格挡8→10；最多消耗2→3张。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "虚无压缩"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "有选择的牌堆压缩，普通格挡提供兜底用途。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/GreenhouseGirl.cs#L34",
+      "source_sha256": "926038854544c7bb9a8758efdb4aba76037a533fc22296dab230362a32e47e0e",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "GuitarSmash",
+      "name": "吉他打击",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：目标2易伤，本回合4力量；墨：12伤害后抽2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "攻击投资与过牌在同卡两种形态中分工。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/GuitarSmash.cs#L52",
+      "source_sha256": "198e78d9d6344f673d311ae526cbbfe909bd5fe6735617154dd3dc3e3a171597",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Harmony",
+      "name": "和声",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "先抽1。睦：8格挡；墨：8伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡8→11；伤害8→9；墨额外再抽1。",
+      "upgrade_delta": "格挡8→11；伤害8→9；墨额外再抽1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "无专属资源依赖，按纯Utility统计。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Harmony.cs#L33",
+      "source_sha256": "344c3ef4bd6796dc09e6a0facf64d6e435bcf7eefc8ae82fd1a1469414a4b427",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "HeartResonance",
+      "name": "心灵共鸣",
+      "cost": 2,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": true,
+      "base_effect": "所有存活玩家进入睦；各在手牌、抽牌堆、弃牌堆生成1张随机角色牌，第一次打出0费。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "消耗",
+      "archetypes": [
+        "生成协作",
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "源码限制仅多人；包含自己；生成排除禁止生成及模式不符的牌。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/HeartResonance.cs#L49",
+      "source_sha256": "24718ec75f59446b5ea4dbce91bd4024891b916f46f2a034c07daf9d5b037aed",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "HideHeart",
+      "name": "收起真心",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "下回合获得2能量。睦：5格挡；墨：进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：下回合能量2→3；格挡5→7。",
+      "upgrade_delta": "下回合能量2→3；格挡5→7。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "切换与跨回合能量调度。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/HideHeart.cs#L44",
+      "source_sha256": "4018450a1e18d89d56d12e58cfa98b757208fe1fc8d60f674ee63e6b3473de9e",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "HollowActor",
+      "name": "空心演员",
+      "cost": "X",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "X费；获得X层转换人格，下回合开始逐层切换。",
+      "upgrade_effect": "基础效果同左，应用以下变化：层数X→X+1。",
+      "upgrade_delta": "层数X→X+1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Payoff"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "X=0时升级版仍给1层；单张牌可批量制造切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/HollowActor.cs#L39",
+      "source_sha256": "d7fbd9e94e5329ad18ee29a4eb0ee982d0e5b04df9805d4ac92bd43e6bbef00b",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "HugThigh",
+      "name": "抱住大腿",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "AnyAlly",
+      "scope": "普通奖励",
+      "multiplayer_only": true,
+      "base_effect": "清除另一玩家的力量、敏捷、活力，自己获得对应层数的2倍；给该玩家弃牌堆加入本牌复制品。",
+      "upgrade_effect": "基础效果同左，应用以下变化：复制品改放抽牌堆随机位置，并继承升级。",
+      "upgrade_delta": "复制品改放抽牌堆随机位置，并继承升级。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "生成协作",
+        "力量活力多段",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "仅多人；StealPower包含负层数转移，0层才跳过。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/HugThigh.cs#L52",
+      "source_sha256": "fa655bfe786d5fca16930e37cc6fc8daa7cc6931166b9925c6c8df19bf1d550d",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "Imitate",
+      "name": "模仿",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：12格挡，目标2虚弱；墨：以目标第一项攻击意图的总伤害作为本次基础伤害，无攻击则1。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "是单次攻击，非逐段复制；意图值与本次攻击增减伤分开计算。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Imitate.cs#L100",
+      "source_sha256": "caa5ba95091313ed5a319f17cd37d299cec8834169bf91908e8fedbfd111d555",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "InnerNoise",
+      "name": "心底的噪音",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "向手牌生成3张随机0费角色牌。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用1→0。",
+      "upgrade_delta": "费用1→0。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "生成协作"
+      ],
+      "roles": [
+        "Generator",
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "排除X费、禁止生成和模式不符的牌，不是给任意牌降费。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/InnerNoise.cs#L25",
+      "source_sha256": "ac24c9d12b2816d5c73cc2122a0f395728ed08800f1c24964e2b5098a9ee4d3d",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Kneel",
+      "name": "下跪",
+      "cost": 2,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：受到的伤害减半1回合；墨：4覆甲，进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：减伤1→2回合；覆甲4→6。",
+      "upgrade_delta": "减伤1→2回合；覆甲4→6。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "减伤Power具体乘区及衰减时机见关联源码。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Kneel.cs#L43",
+      "source_sha256": "15f85429d1a935334324ff326f9808fc3758ed4161177a819728f6bb14dec956",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "LittleCucumber",
+      "name": "小黄瓜",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：回复7生命并失去2力量；墨：失去至多4生命且最低留1，获得2力量和2能量。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：回复7→10；自损上限4→2；能量2→3。",
+      "upgrade_delta": "回复7→10；自损上限4→2；能量2→3。",
+      "keywords": "消耗",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "自损走Unblockable/Unpowered伤害；当前HP不足不影响后续奖励。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/LittleCucumber.cs#L45",
+      "source_sha256": "dd5e8a75ca5ed4129980c7f3350edc3ff5c815dc011ca880a47a7e1c46ab4bc4",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "LookAway",
+      "name": "移开视线",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "移除自身易伤、虚弱、脆弱。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加保留。",
+      "upgrade_delta": "增加保留。",
+      "keywords": "消耗",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "通用净化，不清理所有负面状态。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/LookAway.cs#L25",
+      "source_sha256": "fa093856710e3248e2895ccde09065f9613255e99df2a59da7719d6acdc01275",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Madness",
+      "name": "疯癫",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "第k次先前使用后费用为1+k、先获得k能量。睦再获2能量并进入墨；墨抽3+k并进入睦；使用后费用及成长计数+1。",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦额外能量2→3；墨基础抽牌3→4。",
+      "upgrade_delta": "睦额外能量2→3；墨基础抽牌3→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Build-around"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "k是本战斗同实例先前打出次数；高费用仍须先付，不能只看净能量。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Madness.cs#L44",
+      "source_sha256": "849284500a73dbceabbcf447f9c6d25b47e3f351b6a3974d8d6710a932c75bda",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MaskedPlay",
+      "name": "假面剧",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会睦：抽3；演奏会墨：获得3能量。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽3→4；能量3→4。",
+      "upgrade_delta": "抽3→4；能量3→4。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "窗口内的过牌或能量续航。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MaskedPlay.cs#L49",
+      "source_sha256": "d35d69b632b37a2feea64b2166b5cbc47af0d88ff2f404879f76ea62f87a5fc7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Megaphone",
+      "name": "传话筒",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "按打出时形态安装能力：睦为每回合多抽1；墨为回合起始随机手牌本回合0费。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "收益分支在打出时固定，后续切换不会改变已装能力；纯Utility。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Megaphone.cs#L32",
+      "source_sha256": "a114d448b21a8803cd0b167ae5a708a5c2f869f3f92faac32c32918ec69510f1",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MemoryOfBand",
+      "name": "回忆中的乐队",
+      "cost": 3,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得5演艺热情。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用3→2。",
+      "upgrade_delta": "费用3→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "达到阈值安排回合末后的演奏会，不是立即切换窗口。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MemoryOfBand.cs#L31",
+      "source_sha256": "1597c2812aaae463e7fcab10054d8b6c1e9d38ab0417ddf72b9a07ca5edeea19",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MirrorDoll",
+      "name": "镜中人",
+      "cost": 2,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：获得2能量、6格挡并进入墨；墨：3伤害×(2+本回合此前睦出牌数)，再进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡6→9；每段3→5。",
+      "upgrade_delta": "格挡6→9；每段3→5。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "睦出牌历史变成墨攻击段数，随后返回睦续循环。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MirrorDoll.cs#L64",
+      "source_sha256": "b7da0d194d2291474472efed73505d9da96ea6e3553b4bf5bdbbd1b50d765cb8",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MoonForestUniform",
+      "name": "月之森制服",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "以睦开始回合时，获得本回合2敏捷。",
+      "upgrade_effect": "基础效果同左，应用以下变化：临时敏捷2→4。",
+      "upgrade_delta": "临时敏捷2→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Build-around"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "回合开始检查形态。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MoonForestUniform.cs#L34",
+      "source_sha256": "b8dfed38b2818d28339a7ba916af609b1204eb0128f8f25168aa7118b3eea5b9",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MortisCard",
+      "name": "Mortis",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每次实际切换形态，对所有敌人造成8不受力量等修正的伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "Power使用Move与Unpowered，非一次攻击牌打出，不能当成活力多段攻击。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MortisCard.cs#L34",
+      "source_sha256": "1c7b00fa8fd12ae6835408942acfa4ddd893ac2a2f9555d854165b9fec9c776a",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MoveCard",
+      "name": "移动",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：3格挡，弃牌堆选1回手；墨：抽2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡3→5；抽2→3。",
+      "upgrade_delta": "格挡3→5；抽2→3。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "泛用"
+      ],
+      "roles": [
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "基础循环的通用回收工具。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MoveCard.cs#L48",
+      "source_sha256": "962cf6ce365509d3556e5fa487c20c61f5643a1380216b9baee78a76a292dc00",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": true,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuBurn",
+      "name": "燃烧",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得2力量。",
+      "upgrade_effect": "基础效果同左，应用以下变化：力量2→3。",
+      "upgrade_delta": "力量2→3。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "简洁的长期攻击成长。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuBurn.cs#L35",
+      "source_sha256": "e39144bd71ef51ce06905c2c7217b57e7796d8da0882e180e6f14b7345465e1d",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuCourage",
+      "name": "勇气",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：4伤害×2；墨：7格挡。",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加保留。",
+      "upgrade_delta": "增加保留。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Consumer",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "在睦形态也能兑现多段攻击，避免固定睦只铺垫。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuCourage.cs#L34",
+      "source_sha256": "5e133e5941f4c3167a4e831c3883cc47f1642624bb802860efe832e17f376c95",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuDefend",
+      "name": "防御",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Basic",
+      "target": "Self",
+      "scope": "初始",
+      "multiplayer_only": false,
+      "base_effect": "睦：6格挡；墨：先3格挡，再获得本回合1敏捷。",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦格挡6→9；墨格挡3→5、敏捷1→2。",
+      "upgrade_delta": "睦格挡6→9；墨格挡3→5、敏捷1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "顺序重要，刚获得的敏捷不加成本牌先前格挡。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuDefend.cs#L50",
+      "source_sha256": "b94009efe844473fd768bdefe5c4179dce5e7ba7d845ab4af0663b375c59c76c",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "MuGrandFinale",
+      "name": "华丽谢幕",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会且打出后手牌为0：全体5伤害×4，否则无伤害。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：每段5→8。",
+      "upgrade_delta": "每段5→8。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏窗口和清空手牌共同约束高段数回报。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuGrandFinale.cs#L50",
+      "source_sha256": "b36608eae64df3b28c3e62797aba83a2c7b9cb5367fd4549ba2b9a6d4af784f9",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuMask",
+      "name": "面具",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得1热情；切换形态。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用1→0。",
+      "upgrade_delta": "费用1→0。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "同一张牌推进两个独立循环。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuMask.cs#L37",
+      "source_sha256": "e54ab8836eead00429450ed6a9aee2827de770aebd58ba5a03361da646cd666d",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuMonologue",
+      "name": "独白",
+      "cost": 0,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会：5伤害×2。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：次数2→3。",
+      "upgrade_delta": "次数2→3。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏会把资源牌变成多段攻击。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuMonologue.cs#L46",
+      "source_sha256": "42248c90238c238a6e32958d1dd3a401aa2adca54e78a8c7c6ac602adab20320",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MuOneForAll",
+      "name": "一心化万",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": true,
+      "base_effect": "所有其他存活玩家进入睦，并各向抽牌堆加入使用者整副永久卡组的复制品，保留升级次数。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用2→1。",
+      "upgrade_delta": "费用2→1。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "生成协作",
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "仅多人；不复制所有SavedProperty，不等于原封不动复制成长状态。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuOneForAll.cs#L41",
+      "source_sha256": "e84fb967d14dca1067a32550f886441ea58fece407e992836f4a9104672b62f5",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "MuStrike",
+      "name": "打击",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Basic",
+      "target": "AnyEnemy",
+      "scope": "初始",
+      "multiplayer_only": false,
+      "base_effect": "睦：4活力与本回合1力量；墨：7伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：活力4→5、临时力量1→2；伤害7→10。",
+      "upgrade_delta": "活力4→5、临时力量1→2；伤害7→10。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "起始牌直接承担铺垫与兑现。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MuStrike.cs#L51",
+      "source_sha256": "3623d8b0dcf0ac7c6eaeb546d695d1e94cbc7d7aecc2c62e49bb781bbad30dde",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "MultipleMonster",
+      "name": "多首的怪物",
+      "cost": 3,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得等于本战斗实际切换总次数的转换人格层数。【虚无】",
+      "upgrade_effect": "基础效果同左，应用以下变化：移除虚无。",
+      "upgrade_delta": "移除虚无。",
+      "keywords": "虚无",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "没有额外固定基础层数；0次切换则获得0。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MultipleMonster.cs#L31",
+      "source_sha256": "a2f2f7e9eebce505771f62b402f671930656f7efca3ad11b5ed7c40238373aae",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Mutsumi",
+      "name": "睦头人",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：4格挡×2，进入墨；墨：全体1虚弱，本回合3敏捷，进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦额外本回合2力量；墨全体虚弱1→2。",
+      "upgrade_delta": "睦额外本回合2力量；墨全体虚弱1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "多次格挡放大敏捷，同时在两形态间周转。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Mutsumi.cs#L49",
+      "source_sha256": "324efd4dbb6d4ed9e827d2b50ac0d58954c8e6d66277431d78b68adac895b2f9",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "MutsumiCharge",
+      "name": "睦头人出击！",
+      "cost": 0,
+      "type": "Attack",
+      "rarity": "Basic",
+      "target": "AnyEnemy",
+      "scope": "初始",
+      "multiplayer_only": false,
+      "base_effect": "对目标造成0基础伤害×2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：额外获得0基础格挡×2。",
+      "upgrade_delta": "额外获得0基础格挡×2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "升级后接敏捷；0基础值仍可承接属性修正，不是没有效果。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/MutsumiCharge.cs#L41",
+      "source_sha256": "223d31b6fe09c010ff7b663cad3396130706b0105057ba066c3749335ba8070a",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "NeverHappyInBand",
+      "name": "从来没觉得玩乐队开心过",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "将消耗堆全部演奏牌移到抽牌堆，再把战斗各牌堆的全部演奏牌变为随机角色牌。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：替换牌全部升级。",
+      "upgrade_delta": "替换牌全部升级。",
+      "keywords": "消耗",
+      "archetypes": [
+        "演奏会",
+        "生成协作"
+      ],
+      "roles": [
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "把演奏组件转换成生成牌路线，转换只限本战斗。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/NeverHappyInBand.cs#L38",
+      "source_sha256": "6d743167949a485fa7ddafb4759e627a0a2b91f7faebb2dccbc72add9b02c008",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "NoStayingUp",
+      "name": "熬夜禁止",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：每已有3力量再获得1力量；墨：下一次攻击保留活力。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：移除消耗。",
+      "upgrade_delta": "移除消耗。",
+      "keywords": "消耗",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "升级改变可重复成长与活力保留次数的上限。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/NoStayingUp.cs#L28",
+      "source_sha256": "59d78521a61a029d30a7d285df9126397c3495a5042f70ecc0784ef02604bbef",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "NobleHouse",
+      "name": "名门",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "回合开始，每1当前热情获得3格挡。",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加固有。",
+      "upgrade_delta": "增加固有。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "热情存量转防御；格挡不受敏捷修正，可接格挡转活力。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/NobleHouse.cs#L42",
+      "source_sha256": "078f352a7c2b7bdbdac7480dd1a3f9950c93a6b94da51ba0e07959f72a68d0c1",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Opening",
+      "name": "开幕",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会睦：本回合7力量；演奏会墨：全体20伤害。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：力量7→9；伤害20→25。",
+      "upgrade_delta": "力量7→9；伤害20→25。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏会先投资力量，再用其他多段演奏牌兑现。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Opening.cs#L51",
+      "source_sha256": "05c51daa7e9e02f9a7e85962c90a8f1e6031cecb3def55147d4b5dfa35198a26",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "OutOfControl",
+      "name": "失控",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：6活力；墨：12伤害；然后随机进入睦或墨。",
+      "upgrade_effect": "基础效果同左，应用以下变化：活力6→8；伤害12→15。",
+      "upgrade_delta": "活力6→8；伤害12→15。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "活力投资/兑现与随机形态推进；随机留在原形态不算切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/OutOfControl.cs#L44",
+      "source_sha256": "c6d6f37be780929aae87bf648724ac6c2bbc6a11b41333defe73eecf76468530",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Performance",
+      "name": "表演",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：7格挡、目标1虚弱，进入墨；墨：10伤害，进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡7→10；虚弱1→2；伤害10→14。",
+      "upgrade_delta": "格挡7→10；虚弱1→2；伤害10→14。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "普通牌承担双向切换和生存。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Performance.cs#L45",
+      "source_sha256": "d721e145b598738d79c246a7f7ec3b8bc303fd8317a487aef405d8157b3a02ed",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PerformancePassion",
+      "name": "演艺热情",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "抽2；获得1热情。",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽2→3。",
+      "upgrade_delta": "抽2→3。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "资源发生器附带过牌，减少构筑税。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PerformancePassion.cs#L32",
+      "source_sha256": "18c26da50a245128939aceb3dd498dcb9b7518852d8b4c7635becf30c6a83ba6",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PhantomPersona",
+      "name": "幻想人格",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "移除正层数的若叶睦临时敏捷状态，已得到的敏捷本战斗不再因此失去。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：向弃牌堆加入本牌带虚无的升级复制品。",
+      "upgrade_delta": "向弃牌堆加入本牌带虚无的升级复制品。",
+      "keywords": "消耗",
+      "archetypes": [
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Enabler",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "清除的是到期扣除标记，不是敏捷本体；负层数标记不会移除。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PhantomPersona.cs#L44",
+      "source_sha256": "4105f0dc01647e2f352005a7c3ea859154208375425d9aa93a3cf14b985e15ff",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PlantCucumber",
+      "name": "种植黄瓜",
+      "cost": 2,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每回合开始按当前形态：睦获得6格挡；墨获得4活力。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡6→8；活力4→6。",
+      "upgrade_delta": "格挡6→8；活力4→6。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "一份能力覆盖防御存量与下一次攻击资源；每份能力独立实例。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PlantCucumber.cs#L39",
+      "source_sha256": "66ab62f545e08483bb1071dacde58be38c86223f716bbf2b245be4dca9794667",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PlayDoubleMoon",
+      "name": "演奏《双月》",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会：抽4，随后切换形态。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：抽4→6。",
+      "upgrade_delta": "抽4→6。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会",
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏窗口内过牌同时触发切换引擎。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PlayDoubleMoon.cs#L44",
+      "source_sha256": "7123a4c6341ffbd85371923fa2df64159ba029532617a0807e3424a5bbf9f643",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PlayHaruhikage",
+      "name": "演奏《春日影》",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会睦：1无实体；演奏会墨：全体8伤害×2。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦额外10格挡；每段8→12。",
+      "upgrade_delta": "睦额外10格挡；每段8→12。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "同一窗口牌提供紧急防御或多段兑现。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PlayHaruhikage.cs#L53",
+      "source_sha256": "77c80fc96a65fc6dca7b7b92818f4a3e21b740a25c3669b76dd4e34ab73688a3",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "PlayKillkiss",
+      "name": "演奏《KillKiss》",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "非演奏会：1热情；演奏会睦：7覆甲；演奏会墨：24伤害。【虚无、消耗、演奏】",
+      "upgrade_effect": "基础效果同左，应用以下变化：覆甲7→9；伤害24→30。",
+      "upgrade_delta": "覆甲7→9；伤害24→30。",
+      "keywords": "虚无、消耗、演奏",
+      "archetypes": [
+        "演奏会"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "演奏会的防御或单次伤害回报。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/PlayKillkiss.cs#L54",
+      "source_sha256": "418ed25980b54715f13d522266c5ba776bd29b9d2e8d3692d1d841931d1acc22",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Pluck",
+      "name": "拨弦",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得1热情。睦：4活力；墨：8伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：活力4→6；伤害8→12。",
+      "upgrade_delta": "活力4→6；伤害8→12。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "产热情同时推进活力攻击链。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Pluck.cs#L43",
+      "source_sha256": "966d3a24ff8bffed751f347468be51aa710aff73cd077864fb531a08912c59a9",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Rebellion",
+      "name": "叛逆",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "把手牌、抽牌堆、弃牌堆所有带Strike标签的牌变为随机无色牌。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：替换牌全部升级。",
+      "upgrade_delta": "替换牌全部升级。",
+      "keywords": "消耗",
+      "archetypes": [
+        "生成协作"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "只变本战斗副本，消耗堆不在扫描范围。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Rebellion.cs#L31",
+      "source_sha256": "5bee9bca8d022b2bc27748fef35028d20c71a6bdfcf90c40e398cb0773e90c75",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Reborn",
+      "name": "重生",
+      "cost": 4,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "移除坠入深渊；对所有敌人造成35伤害；获得10格挡。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用4→3。",
+      "upgrade_delta": "费用4→3。",
+      "keywords": "消耗",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "解除切换锁，但不会自动切到睦；卡牌类型为Skill而执行攻击命令。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Reborn.cs#L41",
+      "source_sha256": "9339f703120784739fcfa3090b5e303f43aaa04f685a66b636bd51f477c89060",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Reminisce",
+      "name": "回忆",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AllEnemies",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：全体1虚弱、1易伤，进入墨；墨：全体9伤害，进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：两种减益1→2；伤害9→12。",
+      "upgrade_delta": "两种减益1→2；伤害9→12。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "切换同时布置易伤，连接下一轮攻击。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Reminisce.cs#L46",
+      "source_sha256": "f1dfe1ca94b0376adfe6466926fe1d8c528a4ca045d8eae6fb1bb3a98f1d6cf8",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "SelfIsolate",
+      "name": "自闭",
+      "cost": 0,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：5格挡；墨：获得1能量、自身1虚弱、进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡5→8；取消自身虚弱。",
+      "upgrade_delta": "格挡5→8；取消自身虚弱。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "取消负面效果使出牌顺序更自由。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/SelfIsolate.cs#L47",
+      "source_sha256": "03db75318e8a80f3b5f5ff3d3a80359f368b47a06ab615e9a2fdc90caa6c5616",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Sidekick",
+      "name": "小跟班",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：给至多2张手牌添加虚无；墨：12伤害。",
+      "upgrade_effect": "基础效果同左，应用以下变化：最多选2→3；伤害12→14。",
+      "upgrade_delta": "最多选2→3；伤害12→14。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "虚无压缩"
+      ],
+      "roles": [
+        "Enabler",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "主动设置回合结束压缩，不是立刻消耗选中牌。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Sidekick.cs#L34",
+      "source_sha256": "4e39ad995b9d91afc4ec4a6ead2cdda8aba11351ade0fa918d1d421eea4b27cc",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Silence",
+      "name": "沉默",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：抽(1+本回合此前墨出牌数)；墨：5格挡并进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：每张墨牌额外抽牌1→2；格挡5→8。",
+      "upgrade_delta": "每张墨牌额外抽牌1→2；格挡5→8。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "墨的出牌历史补充睦的手牌，再继续转换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Silence.cs#L33",
+      "source_sha256": "5bb47265db819f598c0840fb462a41d3e1a26740f1a0183d6448e3c7eacbb0ff",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "StairsTumble",
+      "name": "楼梯打滚",
+      "cost": 1,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：5活力、目标1易伤；墨：4伤害×2。",
+      "upgrade_effect": "基础效果同左，应用以下变化：活力5→7；易伤1→2；每段4→7。",
+      "upgrade_delta": "活力5→7；易伤1→2；每段4→7。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Consumer",
+        "Payoff"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "普通牌同时提供攻击链的资源和多段出口。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/StairsTumble.cs#L45",
+      "source_sha256": "c31c6a140ecb53bdde649cd0ba208c4089f6d6a17354a9ebd0e4b41934f667a7",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "Surveillance",
+      "name": "盯——",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：本回合每次获得格挡同时获得等量活力；墨：随机敌人5伤害、本回合3敏捷、进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：睦额外保留格挡至下次回合开始；伤害5→7、敏捷3→4。",
+      "upgrade_delta": "睦额外保留格挡至下次回合开始；伤害5→7、敏捷3→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化",
+        "力量活力多段",
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "混合",
+      "interpretation": "明确把格挡变成活力，防御体系可以给攻击供能。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Surveillance.cs#L50",
+      "source_sha256": "486f495327689bae12e1a5f42e9592e089a18d0f3d519ae755372459fcc1eedd",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "SwitchPersona",
+      "name": "人格转换",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Basic",
+      "target": "Self",
+      "scope": "初始",
+      "multiplayer_only": false,
+      "base_effect": "获得本回合2力量、2敏捷；切换形态。",
+      "upgrade_effect": "基础效果同左，应用以下变化：费用1→0。",
+      "upgrade_delta": "费用1→0。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Bridge"
+      ],
+      "upgrade_kind": "费用",
+      "interpretation": "初始牌就连接形态与两种属性。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/SwitchPersona.cs#L38",
+      "source_sha256": "a67169a663e7763cc520e977b7b463123ca5efd49f0bc309e8797d08c9728ced",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "TearMaskGold",
+      "name": "撕下面具",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：2格挡×4；墨：获得1能量、5活力并进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：每次格挡2→3；能量1→2。",
+      "upgrade_delta": "每次格挡2→3；能量1→2。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "敏捷格挡转化",
+        "力量活力多段",
+        "切换引擎"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "多次格挡放大敏捷；另一分支补充活力与切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/TearMaskGold.cs#L46",
+      "source_sha256": "d89c94c341c1f3234575b854874e924be9c2a4609be0c6386292a918f39ea8b3",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "ThousandthPersona",
+      "name": "第一千个人格",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Ancient",
+      "target": "Self",
+      "scope": "先古特殊",
+      "multiplayer_only": false,
+      "base_effect": "每次实际切换，获得本回合2力量和2敏捷。",
+      "upgrade_effect": "基础效果同左，应用以下变化：增加固有。",
+      "upgrade_delta": "增加固有。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Payoff",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "先古稀有度，禁止随机生成；本次未找到源码内的直接获得路径。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/ThousandthPersona.cs#L48",
+      "source_sha256": "27449a4f6867b34e7d337ffb13f7d3e904cfeb9a3b876e732e606bac092e5fbe",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": false
+    },
+    {
+      "id": "Tune",
+      "name": "调音",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "获得1热情。睦：8格挡；墨：目标2虚弱。",
+      "upgrade_effect": "基础效果同左，应用以下变化：格挡8→12；虚弱2→3。",
+      "upgrade_delta": "格挡8→12；虚弱2→3。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "演奏会",
+        "敏捷格挡转化"
+      ],
+      "roles": [
+        "Generator",
+        "Bridge",
+        "Utility"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "热情积累自带防御，能支撑名门或格挡转活力。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/Tune.cs#L43",
+      "source_sha256": "90bf52761c2eadc41f0d911fa864e21ef17c4c6e516cd2866f457a0cb88c4261",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "TwinForms",
+      "name": "双生形态",
+      "cost": 3,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "每回合开始：若睦，随机敌人15伤害后进入墨；若墨，随机敌人2虚弱、2易伤后进入睦。",
+      "upgrade_effect": "基础效果同左，应用以下变化：伤害15→25；两种减益2→4。",
+      "upgrade_delta": "伤害15→25；两种减益2→4。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Enabler",
+        "Payoff",
+        "Build-around"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "每份独立触发；单一分支在触发时检查。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/TwinForms.cs#L39",
+      "source_sha256": "faf4fcf0e38b9c4af6ecf7b229f51a3b6167adab407c5466db192b18127ce3da",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "WakabaFortune",
+      "name": "若叶家产",
+      "cost": 1,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "按打出前本战斗切换总次数，记录每次4金币，于胜利后获得。【消耗】",
+      "upgrade_effect": "基础效果同左，应用以下变化：额外抽1。",
+      "upgrade_delta": "额外抽1。",
+      "keywords": "消耗",
+      "archetypes": [
+        "切换引擎"
+      ],
+      "roles": [
+        "Payoff",
+        "Utility"
+      ],
+      "upgrade_kind": "功能",
+      "interpretation": "收益是打出时快照，不会持续监听后续切换。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/WakabaFortune.cs#L31",
+      "source_sha256": "973fba0a5a2eeb348408f55a25e35cd2a24c86c1738a5ee5f9d657e87dd6fa0d",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    },
+    {
+      "id": "WontLastLong",
+      "name": "不会长久的",
+      "cost": 1,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "scope": "普通奖励",
+      "multiplayer_only": false,
+      "base_effect": "睦：25活力并进入墨，此后每打出1张牌本回合-1力量；墨：3无实体并进入睦，此后每打出1张牌本回合-1敏捷。",
+      "upgrade_effect": "基础效果同左，应用以下变化：两种负面计数均改为每2张触发。",
+      "upgrade_delta": "两种负面计数均改为每2张触发。",
+      "keywords": "无固定关键词",
+      "archetypes": [
+        "切换引擎",
+        "力量活力多段"
+      ],
+      "roles": [
+        "Generator",
+        "Enabler",
+        "Build-around",
+        "Bridge"
+      ],
+      "upgrade_kind": "数值",
+      "interpretation": "本牌自身不计入新负面计数；计数器可跨回合延续，扣属性在回合末恢复。",
+      "source_url": "https://github.com/FFTYYY/sts2-MzmChar-mod/blob/03dc9add4db955351e05bcfce06cf2889f25a695/src/Game/CharacterContent/Cards/WontLastLong.cs#L49",
+      "source_sha256": "29c6a5a76442d5d0ab05966533a44370c640ddb1151d8fc00ce37dc5f121634c",
+      "analysis_kind": "静态源码效果；构筑与设计职责为研究者标注",
+      "pure_utility": false,
+      "reward_singleplayer": true
+    }
+  ]
+}

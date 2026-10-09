@@ -1,0 +1,180 @@
+霜月 v0.2.0 实机验证记录
+
+平台：macOS Apple Silicon
+游戏：v0.107.1 / 59260271
+依赖：BaseLib v3.3.0
+构建：.NET SDK 9.0.318，Release，0 错误、0 警告
+
+[FrostmoonTest] PASS Ice grants frost only for first two skills
+[FrostmoonTest] PASS Moon pays once and consumes one frost
+[FrostmoonTest] PASS Moon marks resolve after text
+[FrostmoonTest] PASS Threshold card triggers Blood after its text
+[FrostmoonTest] PASS Blood doubles following attack
+[FrostmoonTest] PASS Blood exits and schedules recovery token
+[FrostmoonTest] PASS Ember generated next turn
+[FrostmoonTest] PASS Next turn remains on cooldown
+[FrostmoonTest] PASS Explicit HP payment adds recoverable debt
+[FrostmoonTest] PASS Overheal removes only actual debt
+[FrostmoonTest] PASS Recovery cannot repair enemy damage
+[FrostmoonTest] PASS Eight marks consume threshold and preserve overflow
+[FrostmoonTest] PASS Blood Eclipse is doubled exactly once
+[FrostmoonTest] PASS Bloodline selected payment is implemented
+[FrostmoonTest] PASS Lethal primary HP payment is rejected before play
+[FrostmoonTest] PASS Unsafe Moon surcharge is skipped without spending its quota
+[FrostmoonTest] PASS AOE attack does not consume Moon passive
+[FrostmoonTest] PASS Multi-hit attack pays Moon surcharge once
+[FrostmoonTest] PASS Card healing above threshold prevents Blood entry
+[FrostmoonTest] PASS Blood Moon power does not backfill entry draw
+[FrostmoonTest] PASS Blood Moon power played during Blood still rewards its first Eclipse
+[FrostmoonTest] PASS Healing during Blood neither exits nor rearms it
+[FrostmoonTest] PASS Exiting Blood above recovery threshold rearms
+[FrostmoonTest] PASS End-turn autoplay cannot trigger Blood
+[FrostmoonTest] PASS Mandatory Frost cost is checked before play
+[FrostmoonTest] PASS Frost overflow is discarded
+[FrostmoonTest] PASS Artifact blocks the mark packet
+[FrostmoonTest] PASS Eclipse ignores Strength and Vulnerable
+[FrostmoonTest] PASS Unupgraded Shattered Moon resolves six hits of three
+[FrostmoonTest] PASS Upgraded Shattered Moon resolves six hits of four
+[FrostmoonTest] PASS X=3 Blood Blade deals four hits
+[FrostmoonTest] PASS Blocked Eclipse hits still grant Tide block
+[FrostmoonTest] PASS B01 plays without exception
+[FrostmoonTest] PASS B01+ plays without exception
+[FrostmoonTest] PASS B02 plays without exception
+[FrostmoonTest] PASS B02+ plays without exception
+[FrostmoonTest] PASS B03 plays without exception
+[FrostmoonTest] PASS B03+ plays without exception
+[FrostmoonTest] PASS B04 plays without exception
+[FrostmoonTest] PASS B04+ plays without exception
+[FrostmoonTest] PASS C01 plays without exception
+[FrostmoonTest] PASS C01+ plays without exception
+[FrostmoonTest] PASS C02 plays without exception
+[FrostmoonTest] PASS C02+ plays without exception
+[FrostmoonTest] PASS C03 plays without exception
+[FrostmoonTest] PASS C03+ plays without exception
+[FrostmoonTest] PASS C04 plays without exception
+[FrostmoonTest] PASS C04+ plays without exception
+[FrostmoonTest] PASS C05 plays without exception
+[FrostmoonTest] PASS C05+ plays without exception
+[FrostmoonTest] PASS C06 plays without exception
+[FrostmoonTest] PASS C06+ plays without exception
+[FrostmoonTest] PASS C07 plays without exception
+[FrostmoonTest] PASS C07+ plays without exception
+[FrostmoonTest] PASS C08 plays without exception
+[FrostmoonTest] PASS C08+ plays without exception
+[FrostmoonTest] PASS C09 plays without exception
+[FrostmoonTest] PASS C09+ plays without exception
+[FrostmoonTest] PASS C10 plays without exception
+[FrostmoonTest] PASS C10+ plays without exception
+[FrostmoonTest] PASS C11 plays without exception
+[FrostmoonTest] PASS C11+ plays without exception
+[FrostmoonTest] PASS C12 plays without exception
+[FrostmoonTest] PASS C12+ plays without exception
+[FrostmoonTest] PASS C13 plays without exception
+[FrostmoonTest] PASS C13+ plays without exception
+[FrostmoonTest] PASS C14 plays without exception
+[FrostmoonTest] PASS C14+ plays without exception
+[FrostmoonTest] PASS C15 plays without exception
+[FrostmoonTest] PASS C15+ plays without exception
+[FrostmoonTest] PASS C16 plays without exception
+[FrostmoonTest] PASS C16+ plays without exception
+[FrostmoonTest] PASS C17 plays without exception
+[FrostmoonTest] PASS C17+ plays without exception
+[FrostmoonTest] PASS C18 plays without exception
+[FrostmoonTest] PASS C18+ plays without exception
+[FrostmoonTest] PASS C19 plays without exception
+[FrostmoonTest] PASS C19+ plays without exception
+[FrostmoonTest] PASS C20 plays without exception
+[FrostmoonTest] PASS C20+ plays without exception
+[FrostmoonTest] PASS U01 plays without exception
+[FrostmoonTest] PASS U01+ plays without exception
+[FrostmoonTest] PASS U02 plays without exception
+[FrostmoonTest] PASS U02+ plays without exception
+[FrostmoonTest] PASS U03 plays without exception
+[FrostmoonTest] PASS U03+ plays without exception
+[FrostmoonTest] PASS U04 plays without exception
+[FrostmoonTest] PASS U04+ plays without exception
+[FrostmoonTest] PASS U05 plays without exception
+[FrostmoonTest] PASS U05+ plays without exception
+[FrostmoonTest] PASS U06 plays without exception
+[FrostmoonTest] PASS U06+ plays without exception
+[FrostmoonTest] PASS U07 plays without exception
+[FrostmoonTest] PASS U07+ plays without exception
+[FrostmoonTest] PASS U08 plays without exception
+[FrostmoonTest] PASS U08+ plays without exception
+[FrostmoonTest] PASS U09 plays without exception
+[FrostmoonTest] PASS U09+ plays without exception
+[FrostmoonTest] PASS U10 plays without exception
+[FrostmoonTest] PASS U10+ plays without exception
+[FrostmoonTest] PASS U11 plays without exception
+[FrostmoonTest] PASS U11+ plays without exception
+[FrostmoonTest] PASS U12 plays without exception
+[FrostmoonTest] PASS U12+ plays without exception
+[FrostmoonTest] PASS U13 plays without exception
+[FrostmoonTest] PASS U13+ plays without exception
+[FrostmoonTest] PASS U14 plays without exception
+[FrostmoonTest] PASS U14+ plays without exception
+[FrostmoonTest] PASS U15 plays without exception
+[FrostmoonTest] PASS U15+ plays without exception
+[FrostmoonTest] PASS U16 plays without exception
+[FrostmoonTest] PASS U16+ plays without exception
+[FrostmoonTest] PASS U17 plays without exception
+[FrostmoonTest] PASS U17+ plays without exception
+[FrostmoonTest] PASS U18 plays without exception
+[FrostmoonTest] PASS U18+ plays without exception
+[FrostmoonTest] PASS U19 plays without exception
+[FrostmoonTest] PASS U19+ plays without exception
+[FrostmoonTest] PASS U20 plays without exception
+[FrostmoonTest] PASS U20+ plays without exception
+[FrostmoonTest] PASS U21 plays without exception
+[FrostmoonTest] PASS U21+ plays without exception
+[FrostmoonTest] PASS U22 plays without exception
+[FrostmoonTest] PASS U22+ plays without exception
+[FrostmoonTest] PASS U23 plays without exception
+[FrostmoonTest] PASS U23+ plays without exception
+[FrostmoonTest] PASS U24 plays without exception
+[FrostmoonTest] PASS U24+ plays without exception
+[FrostmoonTest] PASS U25 plays without exception
+[FrostmoonTest] PASS U25+ plays without exception
+[FrostmoonTest] PASS U26 plays without exception
+[FrostmoonTest] PASS U26+ plays without exception
+[FrostmoonTest] PASS U27 plays without exception
+[FrostmoonTest] PASS U27+ plays without exception
+[FrostmoonTest] PASS U28 plays without exception
+[FrostmoonTest] PASS U28+ plays without exception
+[FrostmoonTest] PASS R01 plays without exception
+[FrostmoonTest] PASS R01+ plays without exception
+[FrostmoonTest] PASS R02 plays without exception
+[FrostmoonTest] PASS R02+ plays without exception
+[FrostmoonTest] PASS R03 plays without exception
+[FrostmoonTest] PASS R03+ plays without exception
+[FrostmoonTest] PASS R04 plays without exception
+[FrostmoonTest] PASS R04+ plays without exception
+[FrostmoonTest] PASS R05 plays without exception
+[FrostmoonTest] PASS R05+ plays without exception
+[FrostmoonTest] PASS R06 plays without exception
+[FrostmoonTest] PASS R06+ plays without exception
+[FrostmoonTest] PASS R07 plays without exception
+[FrostmoonTest] PASS R07+ plays without exception
+[FrostmoonTest] PASS R08 plays without exception
+[FrostmoonTest] PASS R08+ plays without exception
+[FrostmoonTest] PASS R09 plays without exception
+[FrostmoonTest] PASS R09+ plays without exception
+[FrostmoonTest] PASS R10 plays without exception
+[FrostmoonTest] PASS R10+ plays without exception
+[FrostmoonTest] PASS R11 plays without exception
+[FrostmoonTest] PASS R11+ plays without exception
+[FrostmoonTest] PASS R12 plays without exception
+[FrostmoonTest] PASS R12+ plays without exception
+[FrostmoonTest] PASS T01 plays without exception
+[FrostmoonTest] PASS T01+ plays without exception
+[FrostmoonTest] PASS T02 plays without exception
+[FrostmoonTest] PASS T02+ plays without exception
+[FrostmoonTest] PASS Red Lotus refunds actual HP lost, excludes block and overkill
+[FrostmoonTest] COMPLETE: 165 checks passed
+
+可视检查：角色选择、真实战斗、5张初始手牌、72生命、2初始霜、20张样例牌组、动态状态文字与角色图像均加载。
+
+测试范围：132项主卡/衍生牌普通版与升级版的实际出牌冒烟检查，以及33项资源、形态、回血、神器、多段伤害等行为断言。
+未覆盖：完整通关平衡、多人与所有原版/第三方Mod的交互、Windows实机。
+
+自动关闭测试游戏时仍出现 Godot 的资源释放警告；未加载霜月的对照启动也有同类退出警告。未将这些退出警告算作规则通过；机制检查与可视加载结果分别记录如上。

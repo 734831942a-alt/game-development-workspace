@@ -1,0 +1,399 @@
+[
+  {
+    "id": "B01",
+    "name": "寒锋",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-d04cd43b-e87c-4bb1-b59a-42aeaa0259aa.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/B01.png"
+  },
+  {
+    "id": "B02",
+    "name": "凝霜",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-fc383d38-fa24-4099-bb22-d09c08f654b8.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/B02.png"
+  },
+  {
+    "id": "B03",
+    "name": "映月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-a74f2275-4c87-468c-a14c-263841d0154f.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/B03.png"
+  },
+  {
+    "id": "B04",
+    "name": "归冬",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-4f17fc73-fa8f-47ca-909c-cef47ab7e177.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/B04.png"
+  },
+  {
+    "id": "C01",
+    "name": "寒月斩",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-eb7c76bf-97a6-443b-ad23-7fb2add91edd.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C01.png"
+  },
+  {
+    "id": "C02",
+    "name": "冰棱",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-b2226e25-ab81-41f6-a899-c8d44f1e8000.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C02.png"
+  },
+  {
+    "id": "C03",
+    "name": "踏雪",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-cb36acb5-328c-47ca-856c-e13677a5bf70.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C03.png"
+  },
+  {
+    "id": "C04",
+    "name": "薄暮",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-dc18d838-4c54-4b9f-9cd1-15aef5551fb4.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C04.png"
+  },
+  {
+    "id": "C05",
+    "name": "新月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-513a0b99-a68f-4e13-85a0-69e283037aad.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C05.png"
+  },
+  {
+    "id": "C06",
+    "name": "弦月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-2170a348-0f5f-4073-aab9-080c069635d3.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C06.png"
+  },
+  {
+    "id": "C07",
+    "name": "冰镜",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-16242fa1-0b8d-4443-8eda-bdaea353c898.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C07.png"
+  },
+  {
+    "id": "C08",
+    "name": "碎冰",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-28dd3f29-6782-4d47-9805-be9fa956677e.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C08.png"
+  },
+  {
+    "id": "C09",
+    "name": "雪藏",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-5d31a123-1f02-4c36-a9b4-540f80556203.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C09.png"
+  },
+  {
+    "id": "C10",
+    "name": "月落",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-c1e5e425-b1c4-4d6c-b93a-58100b102b77.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C10.png"
+  },
+  {
+    "id": "C11",
+    "name": "退潮",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-61ceebb3-8e0c-47c6-92b5-fb8b6715335b.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C11.png"
+  },
+  {
+    "id": "C12",
+    "name": "割霜",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-2b5f2ace-bf30-4ae3-aeba-f35a52520da5.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C12.png"
+  },
+  {
+    "id": "C13",
+    "name": "望舒",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-e3ee3d3a-86ed-423f-aac2-eda2ef058172.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C13.png"
+  },
+  {
+    "id": "C14",
+    "name": "照影",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-b3383464-3438-4e5a-b0c2-1faff399e044.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C14.png"
+  },
+  {
+    "id": "C15",
+    "name": "双弧",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-83756568-5719-4398-a7bd-17650e4cd11f.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C15.png"
+  },
+  {
+    "id": "C16",
+    "name": "霜刃回环",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-94dc4c76-9c79-4344-9c74-27467250801d.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C16.png"
+  },
+  {
+    "id": "C17",
+    "name": "月洒",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-f935c146-b2d4-4f35-86ee-ef8257d24d1e.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C17.png"
+  },
+  {
+    "id": "C18",
+    "name": "寒潮",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-0e994adf-d252-44c4-b149-01f3344a150a.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C18.png"
+  },
+  {
+    "id": "C19",
+    "name": "止水",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-359035d5-b801-4c9b-9c8e-2202f6d05d43.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C19.png"
+  },
+  {
+    "id": "C20",
+    "name": "见隙",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-95cb1312-bb7f-4f45-8c99-3808294ddc98.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/C20.png"
+  },
+  {
+    "id": "R01",
+    "name": "血月当空",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-1e79eff5-8b3c-42cd-8c08-ab83d1c91da6.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R01.png"
+  },
+  {
+    "id": "R02",
+    "name": "长夜不尽",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-c6d823c0-d01b-4af1-851e-60361b149387.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R02.png"
+  },
+  {
+    "id": "R03",
+    "name": "冰封王座",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-c8fe026d-d1d1-49d6-9772-e3e171b29745.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R03.png"
+  },
+  {
+    "id": "R04",
+    "name": "万相归潮",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-87788480-d4e7-4c55-b1df-4f158c26f0ab.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R04.png"
+  },
+  {
+    "id": "R05",
+    "name": "月蚀尽头",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-e31550c6-2520-433f-9847-1bafc5b06ac1.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R05.png"
+  },
+  {
+    "id": "R06",
+    "name": "凝血为刃",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-6b206dff-240e-4b1e-84b0-3fe74f91b9a8.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R06.png"
+  },
+  {
+    "id": "R07",
+    "name": "终冬",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-2be526d6-a7ff-476d-949b-c3d1b4787946.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R07.png"
+  },
+  {
+    "id": "R08",
+    "name": "借命",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-1ff07b06-fb48-4de2-95a5-4bc3ece48a99.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R08.png"
+  },
+  {
+    "id": "R09",
+    "name": "月有重圆",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-1c7742fe-3183-43e9-9705-d6a8116936f1.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R09.png"
+  },
+  {
+    "id": "R10",
+    "name": "镜湖倒影",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-98632aa6-9e6a-4d1f-bcf1-e513c12e5382.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R10.png"
+  },
+  {
+    "id": "R11",
+    "name": "红莲葬雪",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-35a1b34f-a374-4c2a-8637-d41fc75412e3.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R11.png"
+  },
+  {
+    "id": "R12",
+    "name": "碎月成星",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-4d277660-90f8-46dd-aeca-fc54cc0951c8.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/R12.png"
+  },
+  {
+    "id": "T01",
+    "name": "余烬覆雪",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-f3e267ab-4404-4344-9593-9e1901dc5653.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/T01.png"
+  },
+  {
+    "id": "T02",
+    "name": "月屑",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-b0384307-a4c0-4ccd-88c6-4e78f1054938.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/T02.png"
+  },
+  {
+    "id": "U01",
+    "name": "镜月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-8ae09f6d-e7be-4b42-a36c-7006f92c0c11.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U01.png"
+  },
+  {
+    "id": "U02",
+    "name": "月下霜",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-ec76b174-3911-4055-861e-3e72b1a228e5.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U02.png"
+  },
+  {
+    "id": "U03",
+    "name": "潮汐",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-32bf828d-4dd1-4349-8793-2d98678ff8de.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U03.png"
+  },
+  {
+    "id": "U04",
+    "name": "霜缝",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-6744645d-7897-49ab-bc7f-2b26290e0468.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U04.png"
+  },
+  {
+    "id": "U05",
+    "name": "冻彻",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-e15b230b-b07e-45b4-85be-e75314652fe6.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U05.png"
+  },
+  {
+    "id": "U06",
+    "name": "玄冰",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-9c7ee81f-1f43-4157-a774-b4a69e601694.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U06.png"
+  },
+  {
+    "id": "U07",
+    "name": "冰河断",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-ef880a6b-eecf-4db0-aa01-a3bfe71a2ad1.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U07.png"
+  },
+  {
+    "id": "U08",
+    "name": "霜解",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-9786a85a-62ef-4f26-b5fb-249f5c7355d3.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U08.png"
+  },
+  {
+    "id": "U09",
+    "name": "凛冬留白",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-706fb857-55d8-4e8f-bc69-fbb37fd9fe0d.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U09.png"
+  },
+  {
+    "id": "U10",
+    "name": "满月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-715b6d11-33c6-4e03-8688-897d3d771ec9.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U10.png"
+  },
+  {
+    "id": "U11",
+    "name": "弦外之音",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-993d0d06-dce6-4279-8f0f-7e8556f19e8f.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U11.png"
+  },
+  {
+    "id": "U12",
+    "name": "掩月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-18248639-876c-4183-9021-d37c4cf2b27a.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U12.png"
+  },
+  {
+    "id": "U13",
+    "name": "残月斩",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-5b546024-bfe6-45ed-9ba5-bda4c0a86b56.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U13.png"
+  },
+  {
+    "id": "U14",
+    "name": "寒月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-9c344e3d-da23-4ca0-b2f8-5ccd0e4fdaac.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U14.png"
+  },
+  {
+    "id": "U15",
+    "name": "两仪",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-88d1e726-31bc-4fc4-add9-a9a4d5a04558.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U15.png"
+  },
+  {
+    "id": "U16",
+    "name": "雪夜回响",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-974d7294-5b53-4b45-91fc-34c4ae149ade.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U16.png"
+  },
+  {
+    "id": "U17",
+    "name": "灼脉",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-e5477d3d-03fd-4bc2-9912-637222aeb4f0.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U17.png"
+  },
+  {
+    "id": "U18",
+    "name": "回春",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-8cac7e63-eb4c-4bda-b815-e9442dbfac41.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U18.png"
+  },
+  {
+    "id": "U19",
+    "name": "寒浴",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-16ca85c7-a35d-4e04-9644-d661ca326113.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U19.png"
+  },
+  {
+    "id": "U20",
+    "name": "刺骨",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-0c7532b5-28fc-4daf-964e-fddc1aca74ec.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U20.png"
+  },
+  {
+    "id": "U21",
+    "name": "留灯",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-20068869-aceb-4ed5-84a0-9c405133c29c.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U21.png"
+  },
+  {
+    "id": "U22",
+    "name": "血线",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-de49287a-bc3b-4f36-ad4c-2ed94888c9f0.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U22.png"
+  },
+  {
+    "id": "U23",
+    "name": "悬月",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-84ccc736-b9c4-4ebf-b98b-7413dbe83469.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U23.png"
+  },
+  {
+    "id": "U24",
+    "name": "霜囊",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-800c4863-3076-4944-982c-10e7f31f9c91.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U24.png"
+  },
+  {
+    "id": "U25",
+    "name": "观星",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-bc82e5c1-e074-4430-a9e2-f6e96a7c79a7.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U25.png"
+  },
+  {
+    "id": "U26",
+    "name": "折光",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-2973021a-acba-4bfb-97fa-8c7e6dd6379e.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U26.png"
+  },
+  {
+    "id": "U27",
+    "name": "薄冰",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-ba622bec-11ae-405e-b531-a7b471090baa.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U27.png",
+    "revision": "single-weapon correction"
+  },
+  {
+    "id": "U28",
+    "name": "夜渡",
+    "source": "/Users/ayanami/.codex/generated_images/01a1009b-46b5-7492-aa6a-c58b009ff7e0/exec-33ff3f97-a3df-48f2-a44a-583508e6dbb9.png",
+    "path": "/Users/ayanami/Documents/ChatGPT/UE类魂项目制作/frostmoon/mod/assets/cards/illustrated-v2/U28.png"
+  }
+]

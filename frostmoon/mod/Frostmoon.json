@@ -1,0 +1,1 @@
+{"id":"Frostmoon","name":"霜月 Frostmoon · 冰月绘卷","author":"Ayanami / Codex","description":"原创冰、月、血月角色。66 张围绕角色动作的卡图、统一角色肖像、逐层填充的月痕与高亮霜图标。玩法沿用 v0.2。","version":"v0.2.2","min_game_version":"0.107.1","has_pck":true,"has_dll":true,"dependencies":[{"id":"BaseLib","min_version":"3.3.0"}],"affects_gameplay":true}
