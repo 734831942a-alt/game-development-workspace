@@ -28,8 +28,19 @@ static class VisualTests
             {
                 var screen=menu.SubmenuStack.GetSubmenuType<NCharacterSelectScreen>();screen.InitializeSingleplayer();menu.SubmenuStack.Push(screen);
                 await Wait(1);
+                var originalPanelPosition=screen.GetNode<Control>("InfoPanel").Position;
                 var button=(NCharacterSelectButton)screen.FindChild("FROSTMOON-FROSTMOON_CHARACTER_button",true,false);
                 button.Select();await Wait(3);
+                var panel=screen.GetNode<Control>("InfoPanel");
+                GD.Print($"[FrostmoonVisual] Select layout: screen={screen.Size}, panel={panel.Position}/{panel.Size}; title={ModelDb.Character<FrostmoonCharacter>().Title.GetFormattedText()}");
+                if(panel.Position.X < screen.Size.X*.5f || panel.Position.X+panel.Size.X > screen.Size.X)throw new Exception("Character information panel is outside the right half.");
+                if(ModelDb.Character<FrostmoonCharacter>().Title.GetFormattedText()!="小木曾和纱")throw new Exception("Character name was not localized.");
+                var vanilla=screen.FindChildren("*","",true,false).OfType<NCharacterSelectButton>().First(b=>!b.IsRandom && !b.IsLocked && b.Character is not FrostmoonCharacter);
+                vanilla.Select();await Wait(.7f);
+                if(!panel.Position.IsEqualApprox(originalPanelPosition))throw new Exception("Native character information panel did not return to its original position.");
+                button.Select();await Wait(.7f);
+                GD.Print("[FrostmoonVisual] Native character layout restored and custom cover reselected.");
+                RenderingServer.ForceDraw();
                 game.GetViewport().GetTexture().GetImage().SavePng(CommandLineHelper.GetValue("frostmoon-screenshot")!);
                 GD.Print("[FrostmoonVisual] Character select screenshot saved.");game.GetTree().Quit();return;
             }

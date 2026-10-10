@@ -11,4 +11,4 @@ if [[ ! -x "$task_dotnet" ]]; then task_dotnet="$(command -v dotnet)"; fi
 "$task_dotnet" run --project tools/BuildPack -p:UseSharedCompilation=false -- assets dist/Frostmoon/Frostmoon.pck
 cp bin/Release/net9.0/Frostmoon.dll dist/Frostmoon/Frostmoon.dll
 cp Frostmoon.json dist/Frostmoon/Frostmoon.json
-print '霜月 Mod 已生成至 dist/Frostmoon/'
+print '小木曾和纱 Mod 已生成至 dist/Frostmoon/'

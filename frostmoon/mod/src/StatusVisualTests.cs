@@ -25,6 +25,28 @@ static class StatusVisualTests
     {
         Directory.CreateDirectory(output);
         var state=player.Creature.GetPower<FrostmoonState>()!;
+        // Exercise the contextual UI in the real game, then restore the opening state.
+        var original=(state.FormValue,state.Debt,state.Armed,state.BlockedThrough,state.EmberTurn);
+        async Task ShowState(string name)
+        {
+            NCombatRoom.Instance!.GetCreatureNode(player.Creature)!.ShowHoverTips(state.HoverTips);
+            await Screenshot(output,name);
+            NCombatRoom.Instance!.GetCreatureNode(player.Creature)!.HideHoverTips();
+        }
+        Check(state.CompactReadout=="冰 · 霜 2/6" && state.Description.GetFormattedText().Split('\n').Length==3,"opening UI has one readout line and three tooltip lines");
+        await ShowState("tooltip-ice");
+        state.FormValue=(int)Form.Moon;state.Debt=5;
+        Check(state.CompactReadout.Contains("回生 5") && state.Description.GetFormattedText().Contains("攻击附痕") && !state.Description.GetFormattedText().Contains("技能生霜"),"moon shows recovery and only its active passive counter");
+        await ShowState("tooltip-moon");
+        state.FormValue=(int)Form.Blood;state.Armed=false;state.BlockedThrough=state.Turn+1;
+        Check(state.Description.GetFormattedText().Contains("×2") && !state.Description.GetFormattedText().Contains("准备"),"active Blood Moon shows its effect instead of rearm instructions");
+        await ShowState("tooltip-blood");
+        state.FormValue=(int)Form.Ice;state.EmberTurn=state.Turn+1;
+        Check(state.Description.GetFormattedText().Contains("冷却中") && state.Description.GetFormattedText().Contains("≥40") && state.Description.GetFormattedText().Contains("余烬覆雪"),"cooldown preserves recovery threshold and next-turn reminder");
+        await ShowState("tooltip-cooldown");
+        state.Armed=true;
+        Check(state.Description.GetFormattedText().Contains("冷却中") && !state.Description.GetFormattedText().Contains("时触发"),"rearmed state still reports cooldown without promising a trigger");
+        (state.FormValue,state.Debt,state.Armed,state.BlockedThrough,state.EmberTurn)=original;
         Check(state.Frost==2 && NodeFor(state).GetNode("%AmountLabel").Get("text").AsString()=="2","opening frost counter shows the starter relic's 2 frost");
         var combat=state.CombatState;
         var enemies=combat.Enemies.Where(e=>e.IsAlive).Take(2).ToArray();

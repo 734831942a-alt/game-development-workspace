@@ -36,13 +36,31 @@ public class FrostmoonState : CustomPowerModel
     public override Color AmountLabelColor => new("bcfaff");
     public override string CustomPackedIconPath => "res://Frostmoon/ui/ice.png";
     public override string CustomBigIconPath => CustomPackedIconPath;
-    public override List<(string,string)> Localization => new PowerLoc("霜月 · 双相", "{Status}", "{Status}");
+    public override List<(string,string)> Localization => new PowerLoc("冰月双相", "{Status}", "{Status}");
     protected override string SmartDescriptionLocKey => "FROSTMOON_NO_SMART_DESCRIPTION";
     public override LocString Description { get { var loc=base.Description; FillDescription(loc); return loc; } }
+    public string FormName => Form switch { Form.Ice => "冰", Form.Moon => "月", _ => "血月" };
+    public string CompactReadout => $"{FormName} · 霜 {Frost}/{FrostCap}" + (Debt > 0 ? $" · 回生 {Debt}" : "");
+    string StatusDescription()
+    {
+        var lines=new List<string> { $"{FormName}形态 · 霜 {Frost}/{FrostCap}" };
+        if(Debt > 0)lines.Add($"可回收生命 {Debt}");
+        if(Form==Form.Blood)
+            lines.Add("攻击与月蚀伤害 ×2，回合末回到冰。");
+        else
+        {
+            lines.Add(Form==Form.Ice ? $"技能生霜：{IceSkills}/2" : $"攻击附痕：{MoonAttacks}/2");
+            if(Turn <= BlockedThrough)lines.Add("血月：冷却中");
+            if(!Armed)lines.Add($"血月：生命 ≥{High} 后准备");
+            else if(Turn > BlockedThrough)lines.Add($"血月：生命 ≤{Low} 时触发");
+        }
+        if(EmberTurn > Turn)lines.Add("下回合获得余烬覆雪。");
+        return string.Join("\n",lines);
+    }
     void FillDescription(LocString loc)
     {
         loc.Add("Status", IsCanonical ? "冰：每回合前2张技能各获得1霜。\n月：前2张单体攻击支付1生命，附加月痕。\n血月：攻击和月蚀伤害翻倍，回合结束返回冰。" :
-            $"形态：{new[]{"冰","月","血月"}[FormValue]}　霜：{Frost}/{FrostCap}\n可回收生命：{Debt}\n血月门槛：≤{Low}　重新准备：≥{High}\n血月：{(Armed ? "已准备" : "需恢复生命")}{(Turn <= BlockedThrough ? "／冷却中" : "")}\n冰技能：{IceSkills}/2　月攻击：{MoonAttacks}/2\n{(EmberTurn > Turn ? "下回合获得余烬覆雪。" : "")}");
+            StatusDescription());
     }
     sealed class Data { public readonly Dictionary<CardPlay,PlaySnapshot> Plays = new(); }
     protected override object InitInternalData() => new Data();

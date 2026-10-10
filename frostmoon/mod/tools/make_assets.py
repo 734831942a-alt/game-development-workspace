@@ -21,33 +21,7 @@ def symbol(name,size,mode):
 for name,size,mode in [('ui/portrait.png',128,'moon'),('ui/energy.png',256,'moon'),('ui/energy_text.png',24,'moon'),('ui/pendant.png',256,'moon'),('ui/ice.png',64,'ice'),('ui/moon.png',64,'moon')]:symbol(name,size,mode)
 for name,mode in [('attack','attack'),('skill','ice'),('power','moon')]:
  symbol('cards/'+name+'.png',512,mode)
-(a/'scenes/select.tscn').write_text('''[gd_scene load_steps=2 format=3]
-[ext_resource type="Texture2D" path="res://Frostmoon/character.png" id="1"]
-[node name="FrostmoonSelect" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-[node name="Backdrop" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color(0.035,0.065,0.12,1)
-mouse_filter = 2
-[node name="Portrait" type="TextureRect" parent="."]
-offset_left = 1400.0
-offset_top = 140.0
-offset_right = 2100.0
-offset_bottom = 920.0
-texture = ExtResource("1")
-expand_mode = 1
-stretch_mode = 5
-mouse_filter = 2
-''')
+# The production selection cover scene is maintained in assets/scenes/select.tscn.
 (a/'scenes/rest.tscn').write_text('''[gd_scene load_steps=2 format=3]
 [ext_resource type="Texture2D" path="res://Frostmoon/character.png" id="1"]
 [node name="Frostmoon" type="Sprite2D"]

@@ -22,7 +22,7 @@ public static class Entry
             GD.Print("[Frostmoon] Isolated local-only playtest storage enabled.");
         }
         new Harmony("ayanami.frostmoon").PatchAll(Assembly.GetExecutingAssembly());
-        GD.Print("[Frostmoon] v0.2.2 loaded; 64 cards + 2 tokens; game target 0.107.1");
+        GD.Print("[Frostmoon] v0.2.3 loaded; 64 cards + 2 tokens; game target 0.107.1");
     }
 }
 

@@ -32,8 +32,8 @@ public class FrostmoonCharacter : PlaceholderCharacterModel
         var bounds=v.GetNode<Control>("Bounds");bounds.Position=new Vector2(-110,-295);bounds.Size=new Vector2(220,295);
         v.GetNode<Marker2D>("IntentPos").Position=new Vector2(0,-370);
         v.GetNode<Marker2D>("CenterPos").Position=new Vector2(0,-140);
-        var label=new Label { Name="FrostmoonReadout",Position=new Vector2(-155,-355),Size=new Vector2(310,62),HorizontalAlignment=HorizontalAlignment.Center,MouseFilter=Control.MouseFilterEnum.Ignore };
-        label.AddThemeFontSizeOverride("font_size",18);label.AddThemeColorOverride("font_shadow_color",Colors.Black);label.AddThemeConstantOverride("shadow_offset_x",2);label.AddThemeConstantOverride("shadow_offset_y",2);v.AddChild(label);
+        var label=new Label { Name="FrostmoonReadout",Position=new Vector2(-155,-340),Size=new Vector2(310,26),HorizontalAlignment=HorizontalAlignment.Center,MouseFilter=Control.MouseFilterEnum.Ignore };
+        label.AddThemeFontSizeOverride("font_size",16);label.AddThemeColorOverride("font_shadow_color",Colors.Black);label.AddThemeConstantOverride("shadow_offset_x",2);label.AddThemeConstantOverride("shadow_offset_y",2);v.AddChild(label);
         var tree=(SceneTree)Engine.GetMainLoop();
         void Update()
         {
@@ -42,7 +42,7 @@ public class FrostmoonCharacter : PlaceholderCharacterModel
             if(state==null)return;
             var color=state.Form==Form.Blood ? new Color("ff8794") : state.Form==Form.Moon ? new Color("eee7ff") : new Color("a4e3ff");
             label.Modulate=color;sprite.Modulate=state.Form==Form.Blood ? new Color(1,.7f,.76f) : Colors.White;
-            label.Text=$"{new[]{"冰","月","血月"}[state.FormValue]}　霜 {state.Frost}/{state.FrostCap}　回生储备 {state.Debt}\n血月 ≤{state.Low}　{(state.Turn<=state.BlockedThrough ? "冷却" : state.Armed ? "已准备" : "恢复至"+state.High+"再准备")}";
+            label.Text=state.CompactReadout;
         }
         v.TreeEntered+=()=>tree.ProcessFrame+=Update;v.TreeExiting+=()=>tree.ProcessFrame-=Update;
         var animator=new AnimationPlayer {Name="AnimationPlayer"};v.AddChild(animator);var library=new AnimationLibrary();
@@ -57,9 +57,9 @@ public class FrostmoonCharacter : PlaceholderCharacterModel
         animator.AddAnimationLibrary("",library);animator.Autoplay="Idle";animator.AnimationFinished+=name=>{if(name!="Dead")animator.Play("Idle");};
         return v;
     }
-    public override List<(string, string)> Localization => new CharacterLoc("霜月", "霜月",
+    public override List<(string, string)> Localization => new CharacterLoc("小木曾和纱", "小木曾和纱",
         "以霜护身，以月刻敌。\n在冰与月之间往复，将付出的生命收回。\n生命不高于40%时，血月照临一回合。",
-        "她", "她", "她的", "她的", "冷月与初雪。", "月还未落。", "……", "尚有余烬。", "留作旅费。", "霜月的卡牌", "将霜月卡牌加入奖励与商店。");
+        "她", "她", "她的", "她的", "冷月与初雪。", "月还未落。", "……", "尚有余烬。", "留作旅费。", "小木曾和纱的卡牌", "将小木曾和纱的卡牌加入奖励与商店。");
 }
 public class FrostmoonCardPool : CustomCardPoolModel
 {

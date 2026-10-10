@@ -1,10 +1,14 @@
-# 游戏开发工作区：霜月 Mod 与 UE5.5 战斗工程
+# Slay The Spire2 Mod
 
-本仓库独立保存当前游戏开发成果：原创「霜月 Frostmoon」Mod、角色与卡牌美术、卡池研究与设计文档，以及 Unreal Melee Combat System 的 UE5.5 迁移修改。
+本仓库保存「小木曾和纱」角色 Mod（内部 ID：Frostmoon）、角色与卡牌美术、卡池研究与设计文档，以及 Unreal Melee Combat System 的 UE5.5 迁移修改。
 
-## 霜月 Frostmoon v0.2.2
+## 小木曾和纱 · 冰月绘卷 v0.2.3
 
 面向《杀戮尖塔 2》v0.107.1 的原创角色 Mod，已在 macOS Apple Silicon 的真实游戏中构建、加载和进行本地单人测试。包含冰、月、血月三形态，64 张主卡、2 张衍生牌及独立插画。
+
+v0.2.3 新增满月镜水选角封面、更新角色显示名并精简战斗状态。
+
+![小木曾和纱选角封面](frostmoon/mod/assets/ui/character-select-cover.png)
 
 - [使用说明与构建方式](frostmoon/mod/README.md)
 - [Mod 源码](frostmoon/mod/src/)、[原创资源](frostmoon/mod/assets/)与[美术原图、提示词](frostmoon/mod/art/)

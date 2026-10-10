@@ -1,0 +1,13 @@
+Generated with the built-in imagegen tool on 2026-10-10.
+Character identity reference: art/frostmoon-character-approved.png
+Output: assets/ui/character-select-cover.png
+
+Use case: identity-preserve.
+Asset type: production game character-select cover, wide 16:9 landscape, 2048x1152.
+Input images: Image 1 is the moonlit water cover to revise; Image 2 is the definitive character identity and costume reference.
+CHANGE THE COMPOSITION AND POSE as follows. The one character must stand on the LEFT, at about 28% of image width, full body visible. The complete FULL MOON is separate on the UPPER RIGHT, centered around 76% width and 22% height, with diameter about 34% of image HEIGHT. Keep a clear wide gap between the woman and moon: NO silhouette or sword overlapping the moon.
+The adult swordswoman stands STRAIGHT UPRIGHT, calm and composed, torso vertical, feet naturally and modestly spaced, no crouch, no wide lunge, no bending forward. BOTH EYES CLOSED, serene concentration. Her katana is SHEATHED and SECURED AT HER WAIST with the belt on her left hip; right hand wrapped naturally around the sword HILT in a poised pre-draw / iaijutsu stance, left hand lightly steadying the sheath near the belt. No bare blade displayed, no detached sword, no pointing or waving. The belt visibly supports the sheathed sword. Head around 14% image height, boots around 80% height. Preserve the same silver-white bob haircut, crescent hair ornament, black-white-blue short embroidered kimono outfit, snowflake and moon motifs, bare legs and black ankle boots from Image 2.
+Environment and mood: retain the dreamlike boundless full-moon arena atmosphere associated with Rennala's final duel in Elden Ring, interpreted as an original mirror-flower water-moon (镜花水月) scene. Dark infinite sapphire sky, subtle stars and low pale mist, luminous full moon reflected on a surface ambiguously WATER, ICE and MIRROR, fine ripples around her boots, faint thin ice veins, subtle reflections. More restrained, serene and spacious than Image 1, fewer flowers and glitter particles. No architecture, no rocky mountains.
+UI composition: the RIGHT LOWER quadrant from 54% to 93% width and 43% to 74% height is intentionally dark uncluttered reflected water/mist, reserved for a native character information panel. Moon is above this area. Bottom 17% calm/dark for game selection icons. The left-side woman is the main focus.
+Style: polished painted fantasy key art with anime character fidelity and elegant cinematic silver-blue moonlight.
+Must satisfy: woman LEFT; full round moon RIGHT and separate; UPRIGHT standing; BOTH EYES SHUT; sword SHEATHED and BELTED AT WAIST; hand gripping HILT ready to draw. No text, no UI, no frame, no logos, no watermark, no additional characters.
