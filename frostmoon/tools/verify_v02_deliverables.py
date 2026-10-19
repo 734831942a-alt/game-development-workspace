@@ -4,7 +4,7 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 root=Path(__file__).resolve().parents[1]
-out=root.parent/'outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0'
+out=root.parent/'docs/design'
 qa=root.parent/'artifacts/frostmoon-v02-qa'
 d=json.loads((root/'v02/design.json').read_text())
 rules=json.loads((root/'v02/rules.json').read_text())

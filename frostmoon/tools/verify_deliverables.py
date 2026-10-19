@@ -38,7 +38,7 @@ for doc in ROOT.glob('*.md'):
             link_count+=1
         elif not link.startswith('http'):
             assert (doc.parent/link.split('#')[0]).exists(),(doc,link)
-book=ROOT.parent/'outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0/霜月卡池研究与原型.xlsx'
+book=ROOT.parent/'docs/design/霜月卡池研究与原型.xlsx'
 ns={'m':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 with zipfile.ZipFile(book) as z:
     assert z.testzip() is None

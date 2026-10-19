@@ -10,7 +10,7 @@ from docx.opc.constants import RELATIONSHIP_TYPE as RT
 
 root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'v02/rules.json').read_text())
-output=root.parent/'outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0/霜月三形态设计说明v0.2.docx'
+output=root.parent/'docs/design/霜月三形态设计说明v0.2.docx'
 doc=Document();sec=doc.sections[0]
 sec.page_width=Inches(8.5);sec.page_height=Inches(11)
 sec.top_margin=Inches(.65);sec.bottom_margin=Inches(.65)

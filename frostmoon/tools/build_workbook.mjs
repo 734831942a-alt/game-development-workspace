@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {Workbook, SpreadsheetFile} from '@oai/artifact-tool';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output=path.resolve(root,'../outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0');
+const output=path.resolve(root,'../docs/design');
 const qa=path.resolve(root,'../artifacts/frostmoon-qa');
 await fs.mkdir(output,{recursive:true}); await fs.mkdir(qa,{recursive:true});
 const data=JSON.parse(await fs.readFile(path.join(root,'data/reference_cards.json'),'utf8'));

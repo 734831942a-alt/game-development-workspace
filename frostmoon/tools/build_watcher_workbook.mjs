@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const outDir=path.resolve(root,'../outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0');
+const outDir=path.resolve(root,'../docs/design');
 const qa=path.resolve(root,'../artifacts/watcher-qa');
 await fs.mkdir(outDir,{recursive:true});await fs.mkdir(qa,{recursive:true});
 const d=JSON.parse(await fs.readFile(path.join(root,'data/watcher_reference.json'),'utf8'));

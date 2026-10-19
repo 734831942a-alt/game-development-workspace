@@ -2,7 +2,7 @@ from pathlib import Path
 import shutil,zipfile,json,hashlib
 r=Path(__file__).resolve().parents[1]
 version=json.loads((r/'Frostmoon.json').read_text())['version']
-out=r.parents[1]/'outputs/01a1009b-46b5-7492-aa6a-c58b009ff7e0'/('小木曾和纱Mod-'+version+'-冰月绘卷')
+out=r.parents[1]/'docs/playtests'/(version+'-冰月绘卷')
 out.mkdir(parents=True,exist_ok=True)
 for n in ['BaseLib','Frostmoon']:(out/'mods'/n).mkdir(parents=True,exist_ok=True)
 for f in (r/'vendor/BaseLib').glob('BaseLib.*'):shutil.copy2(f,out/'mods/BaseLib'/f.name)
@@ -10,7 +10,7 @@ shutil.copy2(r/'references/BaseLib/LICENSE.txt',out/'mods/BaseLib/LICENSE.txt')
 for name,src in [('Frostmoon.dll',r/'bin/Release/net9.0/Frostmoon.dll'),('Frostmoon.json',r/'Frostmoon.json'),('Frostmoon.pck',r/'dist/Frostmoon/Frostmoon.pck')]:shutil.copy2(src,out/'mods/Frostmoon'/name)
 shutil.copy2(r/'README.md',out/'使用说明.md')
 shutil.copy2(r/'测试记录.txt',out/'测试记录.txt')
-launcher=out.parent/'霜月Mod试玩版/启动霜月隔离试玩.command'
+launcher=out.parent/'v0.1-试玩版/启动霜月隔离试玩.command'
 if launcher.is_file():
  target=out/'启动小木曾和纱隔离试玩.command'
  target.write_text(launcher.read_text().replace('霜月','小木曾和纱'))
